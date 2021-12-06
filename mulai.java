@@ -5,8 +5,43 @@ public class mulai {
   public static void judul() {
     System.out.println("         SELAMAT DATANG           ");
     System.out.println("----------------------------------");
-    System.out.println("      ~PAKET JATIM SENTOSA~       ");
+    System.out.println("      ~PAKET JAWA SENTOSA~        ");
     System.out.println("SIAP MELAYANI SAMPAI GULUNG TIKAR ");
+  }
+
+  public static String[] namaProvinsi = { "Banten", "Jawa Barat", "Jakarta", "Jawa Tengah", "D.I. Yogyakarta","Jawa Timur" };
+
+  public static byte tampilkanNamaProvinsi() {
+    Scanner obj = new Scanner(System.in);
+    byte i = 1;
+    System.out.println("Tujuan Provinsi");
+    while (i <= namaProvinsi.length) {
+      System.out.println(i + ". " + namaProvinsi[(i - 1)]);
+      ++i;
+    }
+    System.out.println("Pilih Kota: ");
+    byte pilihKota = obj.nextByte();
+    return pilihKota;
+  }
+
+  public static String[] tujuanKota1 = { "Kab. Lebak", "Kab. Pandeglang", "Kab. Serang", "4. Kab. Tangerang",
+      "5. Kota Cilegon", "6. Kota Serang", "7. Kota Tangerang", "8. Kota Tangerang Selatan" };
+  
+  public static byte tampilkanTujuanKota1() {
+    Scanner terserah = new Scanner(System.in);
+    System.out.println("Tujuan Kota");
+    for (byte i = 1; i <= tujuanKota1.length; i++) {
+      
+    }
+  }
+
+  public static voiod tujuanKecamatanBanten1() {
+    System.out.println("Pilih tujuan Kecamatan: ");
+    System.out.println("1. Banjarsari");
+    System.out.println("2. Bayah");
+    System.out.println("3. Bojongmanik");
+    System.out.println("4. Cibadak");
+
   }
 
   public static void jenisBarang() {
@@ -19,42 +54,19 @@ public class mulai {
     System.out.println("6. Otomotif");
   }
 
+
+
   public static void main(String[] args) {
-      Scanner scInt = new Scanner(System.in);
-      judul();
-      jenisBarang();
-      System.out.print("Masukkan jenis barang: ");
-      byte jenisBarang = scInt.nextByte();
-      System.out.print("Masukan jumlah barang: ");
-      byte jumlahBarang = scInt.nextByte();
-      float[] berat = new float[jumlahBarang];
-      for (int i = 0; i < berat.length; ++i) {
-        System.out.print("Masukkan berat barang: " + "kg");
-        berat[i] = scInt.nextFloat();
-      }
-      System.out.println("==================== Program Ekspedisi ====================");
-      System.out.println("=================== Provinsi Jawa Timur ===================");
-      System.out.println("Jenis Ekspedisi ");
-      System.out.println("[1] -> Paket Reguler");
-      System.out.println("[2] -> Paket Kilat");
-      System.out.println("[3] -> Paket Kontainer");
-      System.out.print("Masukkan Pilihan Anda: ");
-      byte jenis = scInt.nextByte();
-      int tarifPerkilo = 0;
-      switch (jenis) {
-        case (1):
-          tarifPerkilo = 5000;
-          break;
-        case (2):
-          tarifPerkilo = 2000;
-          break;
-        case (3):
-          tarifPerkilo = 3000;
-          break;
-        default:
-          System.out.println("Jenis Packaging ");
-          System.out.println("[1] -> Plastik");
-          System.out.println("[2] -> Kardus);
-            System.out.print("Masukkan Pilihan Anda: "); int input = sc.nextInt();
-          }
-      }
+    Scanner pb = new Scanner(System.in);
+
+    byte pilihanProvinsi = showNamaProvinsi();
+    switch (pilihanProvinsi) {
+      case 1:
+        tujuanKota1();
+        break;
+    
+      default:
+        break;
+    }
+  }
+}
