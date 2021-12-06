@@ -1,11 +1,17 @@
 --DAFTAR FITUR PROGRAM EKSPEDISI--
 
 *wajib	
+
 -Input informasi asal tujuan barang (kota, kecamatan, prov) 
+
 -Input informasi jenis dan berat barang
+
 -Input jenis layanan (regular, kilat, dll) dan packaging 
+
 -Cetak RESI 
+
 -Pembayaran 
+
 -KREATIVITAS
 
 
