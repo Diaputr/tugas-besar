@@ -9,9 +9,9 @@ public class mulai {
     System.out.println("SIAP MELAYANI SAMPAI GULUNG TIKAR ");
   }
 
-  public static String[] namaProvinsi = { "Banten", "Jawa Barat", "Jakarta", "Jawa Tengah", "D.I. Yogyakarta","Jawa Timur" };
+  public static String[] namaProvinsi = {"Banten","Jawa Barat","Jakarta","Jawa Tengah","D.I. Yogyakarta","Jawa Timur"};
 
-  public static byte tampilkanNamaProvinsi() {
+  public static void tampilkanNamaProvinsi() {
     Scanner obj = new Scanner(System.in);
     byte i = 1;
     System.out.println("Tujuan Provinsi");
@@ -19,22 +19,32 @@ public class mulai {
       System.out.println(i + ". " + namaProvinsi[(i - 1)]);
       ++i;
     }
-    System.out.println("Pilih Kota: ");
-    byte pilihKota = obj.nextByte();
-    return pilihKota;
   }
 
-  public static String[] tujuanKota1 = { "Kab. Lebak", "Kab. Pandeglang", "Kab. Serang", "4. Kab. Tangerang",
-      "5. Kota Cilegon", "6. Kota Serang", "7. Kota Tangerang", "8. Kota Tangerang Selatan" };
-  
-  public static byte tampilkanTujuanKota1() {
+  public static String[] tujuanKotaBanten1 = {"Kab. Lebak", "Kab. Pandeglang","Kab. Serang","Kab. Tangerang","Kota Cilegon","Kota Serang","Kota Tangerang","Kota Tangerang Selatan"};
+
+  public static byte tampilkanTujuanKotaBanten1() {
     Scanner terserah = new Scanner(System.in);
     System.out.println("Tujuan Kota");
     for (byte i = 1; i <= tujuanKota1.length; i++) {
-      
+      System.out.println(i + ". " + tujuanKota1[(i - 1)]);
     }
+    System.out.println("Pilih Kota: ");
+    byte pilihKota = terserah.nextByte();
+    return pilihKota;
   }
 
+  public static String[] tujuanKecamatanBanten1 = { "Kec. Banjarsari", "Kec. Bayah", "Kec. Bojongmanik", "Kec. Cibadak",
+      "Kec. Cibeber", "Kec. Cigemblong", "Kec. Cihara", "Kec. Cijaku", "Kec. Cikulur", "Kec. Cileles", "Kec. Cilograng",
+      "Kec. Cimarga", "Kec. Cipanas", "Kec. Cirinten", "Kec. Curugbitung", "Kec. Gunungkencana", "Kec. Kalang Anyar",
+      "Kec. Lebak Gedong", "Kec. Leuwidamar", "Kec. Maja", "Kec. Malingping", "Kec. Muncang", "Kec. Panggarangan",
+      "Kec. Rangkasbitung", "Kec. Sajira", "Kec. Sobang", "Kec. Wanasalam", "Kec. Warunggunung" };
+
+  public static byte tujuanKecamatanBanten1() {
+    Scanner pab = new Scanner(System.in);
+    System.out.println("Tujuan Kecamatan");
+
+  }
   public static voiod tujuanKecamatanBanten1() {
     System.out.println("Pilih tujuan Kecamatan: ");
     System.out.println("1. Banjarsari");
@@ -64,7 +74,7 @@ public class mulai {
       case 1:
         tujuanKota1();
         break;
-    
+
       default:
         break;
     }
