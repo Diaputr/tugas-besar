@@ -1,7 +1,7 @@
 # --DAFTAR FITUR PROGRAM EKSPEDISI--
 
 
-**wajib**
+## wajib
 
 -Input informasi asal tujuan barang (kota, kecamatan, prov) 
 
@@ -16,9 +16,9 @@
 -KREATIVITAS
 
 
-**A. URUTAN FITUR**
+## A. URUTAN FITUR
 
-*identitas pengirim dan penerima
+**-identitas pengirim dan penerima-**
 
 Nama Pengirim :
 
@@ -31,7 +31,7 @@ No. Telp Pengirim :
 No. Telp Penerima :  
 
 
-**informasi barang**
+**-informasi barang-**
 
 Jenis :
 
@@ -53,7 +53,7 @@ Jumlah :
 Keterangan/Catatan :
 
 
- *layanan
+ **-layanan-**
  
 Jenis Pengiriman :
 
@@ -77,13 +77,13 @@ Opsi Penjemputan :
 - Pick Up (diambil kurir)
 - Drop Off (diserahkan ke ekspedisi)
 
-*pembayaran
+**-pembayaran-**
 
 
 
 
 
-**IMPLEMENTASI**
+## IMPLEMENTASI
 
 *array 
 
@@ -93,4 +93,4 @@ Opsi Penjemputan :
 
 
 
-**OUTPUT**
+## OUTPUT
