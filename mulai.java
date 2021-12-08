@@ -9,26 +9,19 @@ public class mulai {
     System.out.println("SIAP MELAYANI SAMPAI GULUNG TIKAR ");
   }
 
-  public static String[] namaProvinsi = { "Banten", "Jawa Barat", "Jakarta", "Jawa Tengah", "D.I. Yogyakarta",
-      "Jawa Timur" };
-  public static int[] jarakProvinsi = { 20, 30, 10, 15, 20, 5, 25 };
+    public static String[] namaKabupaten = {"Kab. Bangkalan", ""};
+    public static int[] jarakKabupaten = { 36, 75, 40, 47, 38, 34, 56, 33, 38, 42, 13, 31, 26, 59, 26, 34, 36, 37, 28, 37,
+      36, 41, 34, 26, 40, 44, 34, 43, 40, 14, 5, 8, 5, 10, 4, 6, 7, 17 };
 
-  public static void tampilkanAsalNamaProvinsi() {
+    public static String[] namaTujuan1 = {"Kab. Bangkalan","Kab. Gresik","Kab. Pamekasan","Kab. Sampang","Kab. Sumenep", "Kota Surabaya"};
+    public static int[] jarakTujuan1 = { 36, 34, 28, 34, 44, 17 };
+
+    public static void tampilkanAsalNamaKabupaten() {
     byte i = 0;
-    System.out.println("Asal Provinsi");
-    while (i < namaProvinsi.length) {
-      System.out.println((i + 1) + ". " + namaProvinsi[i]);
+    System.out.println("Asal Kabupaten/Kota");
+    while (i < namaKabupaten.length) {
+      System.out.println((i + 1) + ". " + namaKabupaten[i]);
       ++i;
-    }
-  }
-
-  public static void tampilkanNamaProvinsi(int a) {
-    int counter = 1;
-    for (int index = 0; index < namaProvinsi.length; index++) {
-      if (a == index)
-        continue;
-      System.out.println(counter + ". " + namaProvinsi[index]);
-      counter++;
     }
   }
 
@@ -36,77 +29,30 @@ public class mulai {
     int hasil = 0;
     if (a < b) {
       for (int i = (a + 1); i <= b; i++) {
-        hasil += jarakProvinsi[i];
+        hasil += jarakKabupaten[i];
       }
     } else if (a > b) {
       for (int i = (a - 1); i >= b; --i) {
-        hasil += jarakProvinsi[i];
+        hasil += jarakKabupaten[i];
       }
     } else {
-      hasil = jarakProvinsi[b + 2];
+      hasil = jarakKabupaten[a];
     }
     return hasil;
   }
-  // public static String[] tujuanKotaBanten1 = {"Kab. Lebak", "Kab.
-  // Pandeglang","Kab. Serang","Kab. Tangerang","Kota Cilegon","Kota Serang","Kota
-  // Tangerang","Kota Tangerang Selatan"};
-
-  // public static byte tampilkanTujuanKotaBanten1() {
-  // Scanner terserah = new Scanner(System.in);
-  // System.out.println("Tujuan Kota");
-  // for (byte i = 1; i <= tujuanKota1.length; i++) {
-  // System.out.println(i + ". " + tujuanKota1[(i - 1)]);
-  // }
-  // System.out.println("Pilih Kota: ");
-  // byte pilihKota = terserah.nextByte();
-  // return pilihKota;
-  // }
-
-  // public static String[] tujuanKecamatanBanten1 = { "Kec. Banjarsari", "Kec.
-  // Bayah", "Kec. Bojongmanik", "Kec. Cibadak",
-  // "Kec. Cibeber", "Kec. Cigemblong", "Kec. Cihara", "Kec. Cijaku", "Kec.
-  // Cikulur", "Kec. Cileles", "Kec. Cilograng",
-  // "Kec. Cimarga", "Kec. Cipanas", "Kec. Cirinten", "Kec. Curugbitung", "Kec.
-  // Gunungkencana", "Kec. Kalang Anyar",
-  // "Kec. Lebak Gedong", "Kec. Leuwidamar", "Kec. Maja", "Kec. Malingping", "Kec.
-  // Muncang", "Kec. Panggarangan",
-  // "Kec. Rangkasbitung", "Kec. Sajira", "Kec. Sobang", "Kec. Wanasalam", "Kec.
-  // Warunggunung" };
-
-  // public static byte tujuanKecamatanBanten1() {
-  // Scanner pab = new Scanner(System.in);
-  // System.out.println("Tujuan Kecamatan");
-
-  // }
-  // public static voiod tujuanKecamatanBanten1() {
-  // System.out.println("Pilih tujuan Kecamatan: ");
-  // System.out.println("1. Banjarsari");
-  // System.out.println("2. Bayah");
-  // System.out.println("3. Bojongmanik");
-  // System.out.println("4. Cibadak");
-
-  // }
-
-  // public static void jenisBarang() {
-  // System.out.println("\n\nPilih jenis barang:");
-  // System.out.println("1. Elektronik");
-  // System.out.println("2. Farmasi");
-  // System.out.println("3. Apparel");
-  // System.out.println("4. Makanan dan Minuman");
-  // System.out.println("5. Kosmetik");
-  // System.out.println("6. Otomotif");
-  // }
 
   public static void main(String[] args) {
     Scanner pb = new Scanner(System.in);
 
-    tampilkanAsalNamaProvinsi();
+    tampilkanAsalNamaKabupaten();
     System.out.print("Masukkan asal: ");
     int asal = pb.nextInt() - 1;
-    tampilkanNamaProvinsi(asal);
+    tampilkanTujuanNamaKabupaten();
     System.out.print("Masukkan tujuan: ");
     int tujuan = pb.nextInt() - 1;
     System.out.println("\n" + jarak(asal, tujuan));
-
+    double jarak = (double) jarak(asal, tujuan);
+    double total = jarak * 100;
+    System.out.println("Total pembayaran" + total);
   }
 }
