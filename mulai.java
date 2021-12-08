@@ -10,8 +10,7 @@ public class mulai {
   }
 
     public static String[] namaKabupaten = {"Kab. Bangkalan", ""};
-    public static int[] jarakKabupaten = { 36, 75, 40, 47, 38, 34, 56, 33, 38, 42, 13, 31, 26, 59, 26, 34, 36, 37, 28, 37,
-      36, 41, 34, 26, 40, 44, 34, 43, 40, 14, 5, 8, 5, 10, 4, 6, 7, 17 };
+    public static int[] jarakKabupaten = { 36,};
 
     public static String[] namaTujuan1 = {"Kab. Bangkalan","Kab. Gresik","Kab. Pamekasan","Kab. Sampang","Kab. Sumenep", "Kota Surabaya"};
     public static int[] jarakTujuan1 = { 36, 34, 28, 34, 44, 17 };
