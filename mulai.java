@@ -9,11 +9,15 @@ public class mulai {
     System.out.println("SIAP MELAYANI SAMPAI GULUNG TIKAR ");
   }
 
-    public static String[] namaKabupaten = {"Kab. Bangkalan", ""};
-    public static int[] jarakKabupaten = { 36,};
+  String[100] cities = { "Tuban", "Malang" };
+  double[100][2]coordinates=
+  {
+    {0.0, 1.0},
+    {5.0, 0.0}
+  }
 
-    public static String[] namaTujuan1 = {"Kab. Bangkalan","Kab. Gresik","Kab. Pamekasan","Kab. Sampang","Kab. Sumenep", "Kota Surabaya"};
-    public static int[] jarakTujuan1 = { 36, 34, 28, 34, 44, 17 };
+    public static String[] namaKabupaten = {"Kab. Bangkalan", "Kab. Banyuwangi", "Kab. Blitar", "Kab. Bojonegoro", "Kab. Bondowoso", "Kab. Gresik", "Kab. Jember", "Kab. Jombang", "Kab. Kediri", "Kab. Lamongan", "Kab. Lumajang", "Kab. Madiun", "Kab. Magetan", "Kab. Malang", "Kab. Mojokerto", "Kab. Nganjuk", "Kab. Ngawi", "Kab. Pacitan", "Kab. Pamekasan", "Kab. Pasuruan", "Kab. Ponorogo", "Kab. Probolinggo", "Kab. Sampang", "Kab. Sidoarjo", "Kab. Situbondo", "Kab. Sumenep", "Kab. Trenggalek", "Kab. Tuban", "Kab. Tulungagung", "Kota Batu", "Kota Blitar", "Kota Kediri", "Kota Madiun", "Kota Malang", "Kota Mojokerto","Kota Pasuruan", "Kota Probolinggo", "Kota Surabaya"};
+    public static int[][] koordinat = { {} };
 
     public static void tampilkanAsalNamaKabupaten() {
     byte i = 0;
