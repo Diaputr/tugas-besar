@@ -1,3 +1,5 @@
+package com.Math;
+
 import java.util.Scanner;
 
 public class mulai {
@@ -15,7 +17,7 @@ public class mulai {
       "Kab. Situbondo", "Kab. Sumenep", "Kab. Trenggalek", "Kab. Tuban", "Kab. Tulungagung", "Kota Batu", "Kota Blitar",
       "Kota Kediri", "Kota Madiun", "Kota Malang", "Kota Mojokerto", "Kota Pasuruan", "Kota Probolinggo",
       "Kota Surabaya" };
-  public static int[][] koordinat = { { 311, 93 }, { 564, 290 }, { 226, 268 }, { 159, 107 }, /** 5. */
+  public static double[][] koordinat = { { 311, 93 }, { 564, 290 }, { 226, 268 }, { 159, 107 }, /** 5. */
       { 495, 225 }, { 283, 105 }, { 459, 274 }, { 229, 169 }, { 206, 214 }, /* 10. */{ 246, 95 }, { 374, 270 },
       { 131, 186 }, { 82, 190 }, { 286, 276 }, /** 15. */
       { 267, 172 }, { 181, 172 }, { 101, 151 }, { 41, 276 }, { 432, 105 }, /** 20. */
@@ -33,18 +35,18 @@ public class mulai {
     }
   }
 
-  public static int jarak(int a, int b) {
-    int hasil = 0;
-    if (a < b) {
-      for (int i = (a + 1); i <= b; i++) {
-        hasil += jarakKabupaten[i];
-      }
-    } else if (a > b) {
-      for (int i = (a - 1); i >= b; --i) {
-        hasil += jarakKabupaten[i];
-      }
+  public static double jarak(int a, int b) {
+    double x = 0, y = 0, jarak = 0, hasil = 0;
+    if (a == b) {
+      x = koordinat[a][0];
+      y = koordinat[a][1];
+      jarak = Math.sqrt((x * x) + (y * y));
+      hasil = jarak * 100;
     } else {
-      hasil = jarakKabupaten[a];
+      x = koordinat[b][0] - koordinat[a][0];
+      y = koordinat[b][1] - koordinat[a][1];
+      jarak = Math.sqrt((x * x) + (y * y));
+      hasil = jarak * 100;
     }
     return hasil;
   }
@@ -55,12 +57,10 @@ public class mulai {
     tampilkanAsalNamaKabupaten();
     System.out.print("Masukkan asal: ");
     int asal = pb.nextInt() - 1;
-    tampilkanTujuanNamaKabupaten();
+    tampilkanAsalNamaKabupaten();
     System.out.print("Masukkan tujuan: ");
     int tujuan = pb.nextInt() - 1;
-    System.out.println("\n" + jarak(asal, tujuan));
-    double jarak = (double) jarak(asal, tujuan);
-    double total = jarak * 100;
-    System.out.println("Total pembayaran" + total);
+    double jarak = jarak(asal, tujuan);
+    System.out.println("\n" + jarak);
   }
 }
