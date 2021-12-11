@@ -1,14 +1,16 @@
 package com.Math;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class mulai {
 
-  static String[] alamat = new String[2];
-  static String[] noHP = new String[2];
-  static String[] nama = new String[2];
-  static String[] jenisLayanan = { "Reguler", "Kilat", "Ekonomis", "Special Service" };
-  static int[] hargaLayanan = { 7000, 10000, 4000, 15000 };
+  public static Scanner pb = new Scanner(System.in);
+  public static String[] alamat = new String[2];
+  public static String[] noHP = new String[2];
+  public static String[] nama = new String[2];
+  public static String[] jenisLayanan = { "Reguler", "Kilat", "Ekonomis", "Special Service" };
+  public static int[] hargaLayanan = { 7000, 10000, 4000, 15000 };
   public static double[][] koordinat = { { 311, 93 }, { 564, 290 }, { 226, 268 }, { 159, 107 }, /** 5. */
       { 495, 225 }, { 283, 105 }, { 459, 274 }, { 229, 169 }, { 206, 214 }, /* 10. */{ 246, 95 }, { 374, 270 },
       { 131, 186 }, { 82, 190 }, { 286, 276 }, /** 15. */
@@ -17,17 +19,17 @@ public class mulai {
       { 516, 197 }, { 486, 90 }, { 136, 260 }, { 197, 72 }, { 168, 255 }, /* 30. */{ 274, 214 }, { 214, 260 },
       { 191, 219 }, { 112, 186 }, { 290, 241 }, /** 35. */
       { 259, 159 }, { 334, 190 }, { 384, 210 }, { 303, 128 } };
-  static String[] jenisPacking = { "Tanpa Tambahan", "Tambah Packing Kardus", "Tambah Packing Kardus" };
-  static int[] hargaPacking = { 0, 3000, 15000 };
+  public static String[] jenisPacking = { "Tanpa Tambahan", "Tambah Packing Kardus", "Tambah Packing Kardus" };
+  public static int[] hargaPacking = { 0, 3000, 15000 };
 
-  static void tampilLayanan() {
+  public static void tampilLayanan() {
     System.out.println("\n---Pilihan Layanan---\n");
     for (int i = 0; i < jenisLayanan.length; i++) {
       System.out.println((i + 1) + ". " + jenisLayanan[i]);
     }
   }
 
-  static void tampilPacking() {
+  public static void tampilPacking() {
     System.out.println("\n---Pilihan Packing---\n");
     for (int i = 0; i < jenisPacking.length; i++) {
       System.out.println((i + 1) + ". " + jenisPacking[i]);
@@ -41,10 +43,10 @@ public class mulai {
     System.out.println("\t\tSIAP MELAYANI SAMPAI GULUNG TIKAR ");
   }
 
-  static String[] jenisBarang = { "Elektronik/Gadget", "Farmasi/Kosmetik", "Makanan/Minuman", "Pakaian",
+  public static String[] jenisBarang = { "Elektronik/Gadget", "Farmasi/Kosmetik", "Makanan/Minuman", "Pakaian",
       "Pecah Belah" };
 
-  static double barang(double berat, double jml) {
+  public static double menghitungHargaBarangPerBerat(double berat, double jml) {
     int[] harga = { 5000, 10000, 15000 };
     double bayar = 0;
     if (berat >= 0 && berat < 5) {
@@ -61,7 +63,7 @@ public class mulai {
     return bayar;
   }
 
-  static void tampilBarang() {
+  public static void tampilBarang() {
     System.out.println("\n---Informasi Barang---\n");
     for (int i = 0; i < jenisBarang.length; i++) {
       System.out.println((i + 1) + ". " + jenisBarang[i]);
@@ -82,6 +84,72 @@ public class mulai {
     System.out.println("10. Kab. Lamongan   20. Kab. Pasuruan   30. Kota Batu         ");
   }
 
+  // resi
+  public static int[] resi() {
+    Random acak = new Random();
+    int[] kode = new int[10];
+    for (int i = 0; i < kode.length; i++) {
+      kode[i] = (acak.nextInt(10)); // 0-9
+    }
+    return kode;
+  }
+
+  public static void menampilkanOutput(int[] lacak, String[] pengirim, String[] penerima, String jenis, int berat,
+      int perhitungan, String pembayaran, String Layanan) {
+    System.out.println("========== Bukti Pengiriman ==========");
+    System.out.print("No Resi : ");
+    for (int a = 0; a < lacak.length; a++) {
+      System.out.print(lacak[a]);
+    }
+    System.out.println("\n------------");
+    System.out.println("Pengirim : ");
+    for (String pengirim1 : pengirim) {
+      System.out.print("\t");
+      System.out.println(pengirim1);
+    }
+    System.out.println("Penerima : ");
+    for (String penerima1 : penerima) {
+      System.out.print("\t");
+      System.out.println(penerima1);
+    }
+    System.out.println("Jenis Barang : " + jenis);
+    System.out.println("Berat Barang : " + berat);
+    System.out.println("Jenis Layanan : " + Layanan);
+    System.out.println("Tarif : " + perhitungan);
+    System.out.println("Jenis Pembayaran : " + pembayaran);
+  }
+
+  public static int inputPengirim() {
+    // pengirim
+    System.out.println("\t\t-------Pengirim-------");
+    System.out.print("Nama Pengirim: ");
+    nama[0] = pb.nextLine();
+    System.out.print("Nomor HP pengirim: ");
+    noHP[0] = pb.nextLine();
+    tampilinBagus();
+    System.out.print("Masukkan asal: ");
+    int asal = pb.nextInt() - 1;
+    pb.nextLine();
+    System.out.print("Alamat rinci pengirim: ");
+    alamat[0] = pb.nextLine();
+    return asal;
+  }
+
+  public static int inputPenerima() {
+    System.out.println("\t\t-------Penerima-------");
+    System.out.print("Nama Penerima: ");
+    nama[1] = pb.nextLine();
+    System.out.print("Nomor HP Penerima: ");
+    noHP[1] = pb.nextLine();
+    tampilinBagus();
+    System.out.print("Masukkan tujuan: ");
+    int tujuan = pb.nextInt() - 1;
+    pb.nextLine();
+    System.out.print("Alamat rinci penerima: ");
+    alamat[1] = pb.nextLine();
+    return tujuan;
+  }
+
   public static double jarak(int a, int b) {
     double x = 0, y = 0, jarak = 0, hasil = 0;
     if (a == b) {
@@ -98,74 +166,49 @@ public class mulai {
     return hasil;
   }
 
-  public static void main(String[] args) {
-    Scanner pb = new Scanner(System.in);
-
-    // fikril_Ha
-    judul();
-    // pengirim
-    System.out.println("-------Pengirim-------");
-    System.out.print("Nama Pengirim: ");
-    nama[0] = pb.nextLine();
-    System.out.print("Nomor HP pengirim: ");
-    noHP[0] = pb.nextLine();
-    tampilinBagus();
-    System.out.print("Masukkan asal: ");
-    int asal = pb.nextInt() - 1;
-    pb.nextLine();
-    System.out.print("Alamat rinci pengirim: ");
-    alamat[0] = pb.nextLine();
-    // // penerima
-    System.out.println("-------Penerima-------");
-    System.out.print("Nama Penerima: ");
-    nama[1] = pb.nextLine();
-    System.out.print("Nomor HP Penerima: ");
-    noHP[1] = pb.nextLine();
-    tampilinBagus();
-    System.out.print("Masukkan tujuan: ");
-    int tujuan = pb.nextInt() - 1;
-    pb.nextLine();
-    System.out.print("Alamat rinci penerima: ");
-    alamat[1] = pb.nextLine();
-    // bayar per jarak
-    int jarak = (int) jarak(asal, tujuan);
+  public static void inputInformasiBarang() {
     Scanner input = new Scanner(System.in);
-
-    // puput
-    tampilBarang();
-
     System.out.print("\nPilih jenis barang : ");
     int jenis = input.nextInt();
 
     input.nextLine();
     System.out.print("\nNama barang : ");
     String nama = input.nextLine();
-
     System.out.print("\nBerat barang (kg) : ");
     double berat = input.nextDouble();
 
     System.out.print("\nJumlah barang : ");
     double jml = input.nextInt();
-
     input.nextLine();
     System.out.print("\nTambah catatan/keterangan : ");
     String ket = input.nextLine();
 
     // bayar per berat dan jumlah
-    int hargaPerBerat = (int) barang(berat, jml);
-    System.out.println("Harga menurut berat barang : Rp. " + barang(berat, jml));
+    int hargaPerBerat = (int) menghitungHargaBarangPerBerat(berat, jml);
+    System.out.println("Harga menurut berat barang : Rp. " + menghitungHargaBarangPerBerat(berat, jml));
+  }
+
+  public static void main(String[] args) {
+    // fikril_Ha
+    judul();
+    // bayar per jarak
+    int hargaPerJarak = (int) jarak(inputPengirim(), inputPenerima());
+
+    // puput
+    tampilBarang();
+    inputInformasiBarang();
 
     // laila
     tampilLayanan();
     System.out.print("\nMasukkan Pilihan Layanan: ");
     int layanan = sc.nextInt() - 1;
     System.out.println("Harga: Rp. " + hargaLayanan[layanan]);
-
     tampilPacking();
     System.out.print("\nMasukkan Pilihan Packing: ");
     int pack = sc.nextInt() - 1;
     System.out.println("Harga: Rp. " + hargaPacking[pack]);
     System.out.print("----------------------------");
-    System.out.println("\nTotal: Rp. " + (hargaLayanan[layanan] + hargaPacking[pack]));
+    System.out.println("\nTotal: Rp. " + (hargaLayanan[layanan] +
+        hargaPacking[pack]));
   }
 }
