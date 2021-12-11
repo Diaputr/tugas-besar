@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class fiturBarang{
+public class mulai{
 
 	static String[] jenisBarang = {"Elektronik/Gadget", "Farmasi/Kosmetik", "Makanan/Minuman", "Pakaian", "Pecah Belah"};
 
