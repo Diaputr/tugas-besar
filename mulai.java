@@ -6,17 +6,19 @@ public class mulai {
   public static void judul() {
     System.out.println("         SELAMAT DATANG           ");
     System.out.println("----------------------------------");
-    System.out.println("      ~PAKET JAWA SENTOSA~        ");
+    System.out.println("   ~PAKET JAWA TIMUR SENTOSA~     ");
     System.out.println("SIAP MELAYANI SAMPAI GULUNG TIKAR ");
   }
 
-  public static String[] namaKabupaten = { "Kab. Bangkalan", "Kab. Banyuwangi", "Kab. Blitar", "Kab. Bojonegoro",
-      "Kab. Bondowoso", "Kab. Gresik", "Kab. Jember", "Kab. Jombang", "Kab. Kediri", "Kab. Lamongan", "Kab. Lumajang",
-      "Kab. Madiun", "Kab. Magetan", "Kab. Malang", "Kab. Mojokerto", "Kab. Nganjuk", "Kab. Ngawi", "Kab. Pacitan",
-      "Kab. Pamekasan", "Kab. Pasuruan", "Kab. Ponorogo", "Kab. Probolinggo", "Kab. Sampang", "Kab. Sidoarjo",
-      "Kab. Situbondo", "Kab. Sumenep", "Kab. Trenggalek", "Kab. Tuban", "Kab. Tulungagung", "Kota Batu", "Kota Blitar",
-      "Kota Kediri", "Kota Madiun", "Kota Malang", "Kota Mojokerto", "Kota Pasuruan", "Kota Probolinggo",
-      "Kota Surabaya" };
+  public static String[][] namaKabupaten = { { "Kab. Bangkalan", "Kab. Banyuwangi", "Kab. Blitar", "Kab. Bojonegoro",
+      "Kab. Bondowoso", "Kab. Gresik", "Kab. Jember", "Kab. Jombang", "Kab. Kediri", "Kab. Lamongan" },
+      { "Kab. Lumajang",
+          "Kab. Madiun", "Kab. Magetan", "Kab. Malang", "Kab. Mojokerto", "Kab. Nganjuk", "Kab. Ngawi", "Kab. Pacitan",
+          "Kab. Pamekasan", "Kab. Pasuruan" },
+      { "Kab. Ponorogo", "Kab. Probolinggo", "Kab. Sampang", "Kab. Sidoarjo",
+          "Kab. Situbondo", "Kab. Sumenep", "Kab. Trenggalek", "Kab. Tuban", "Kab. Tulungagung", "Kota Batu" },
+      { "Kota Blitar", "Kota Kediri", "Kota Madiun", "Kota Malang", "Kota Mojokerto", "Kota Pasuruan",
+          "Kota Probolinggo", "Kota Surabaya" } };
   public static double[][] koordinat = { { 311, 93 }, { 564, 290 }, { 226, 268 }, { 159, 107 }, /** 5. */
       { 495, 225 }, { 283, 105 }, { 459, 274 }, { 229, 169 }, { 206, 214 }, /* 10. */{ 246, 95 }, { 374, 270 },
       { 131, 186 }, { 82, 190 }, { 286, 276 }, /** 15. */
@@ -27,10 +29,15 @@ public class mulai {
       { 259, 159 }, { 334, 190 }, { 384, 210 }, { 303, 128 } };
 
   public static void tampilkanAsalNamaKabupaten() {
-    byte i = 0;
-    System.out.println("Asal Kabupaten/Kota");
+    byte i = 0, counter = 1;
+    System.out.println("Kabupaten/Kota");
     while (i < namaKabupaten.length) {
-      System.out.println((i + 1) + ". " + namaKabupaten[i]);
+      byte j = 0;
+      while (i < namaKabupaten[0].length) {
+        System.out.println(counter + ". " + namaKabupaten[i][j]);
+        counter++;
+        ++j;
+      }
       ++i;
     }
   }
@@ -51,16 +58,38 @@ public class mulai {
     return hasil;
   }
 
+  static String[] alamat = new String[2];
+  static String[] noHP = new String[2];
+  static String[] nama = new String[2];
+
   public static void main(String[] args) {
     Scanner pb = new Scanner(System.in);
-
+    // pengirim
+    System.out.println("-------Pengirim-------");
+    System.out.print("Nama Pengirim: ");
+    nama[0] = pb.nextLine();
+    System.out.print("Nomor HP pengirim: ");
+    noHP[0] = pb.nextLine();
     tampilkanAsalNamaKabupaten();
     System.out.print("Masukkan asal: ");
     int asal = pb.nextInt() - 1;
+    pb.nextLine();
+    System.out.print("Alamat rinci pengirim: ");
+    alamat[0] = pb.nextLine();
+    // // penerima
+    System.out.println("-------Penerima-------");
+    System.out.print("Nama Penerima: ");
+    nama[1] = pb.nextLine();
+    System.out.print("Nomor HP Penerima: ");
+    noHP[1] = pb.nextLine();
     tampilkanAsalNamaKabupaten();
     System.out.print("Masukkan tujuan: ");
     int tujuan = pb.nextInt() - 1;
-    double jarak = jarak(asal, tujuan);
+    pb.nextLine();
+    System.out.print("Alamat rinci penerima: ");
+    alamat[1] = pb.nextLine();
+
+    int jarak = (int) jarak(asal, tujuan);
     System.out.println("\n" + jarak);
   }
 }
