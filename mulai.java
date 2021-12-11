@@ -4,26 +4,35 @@ import java.util.Scanner;
 
 public class mulai {
 
-    static String[] jenisLayanan = {"Reguler", "Kilat", "Ekonomis", "Special Service"};
-	static int[] hargaLayanan = {7000, 10000, 4000, 15000};
-	
-	static String[] jenisPacking = {"Tanpa Tambahan", "Tambah Packing Kardus", "Tambah Packing Kardus"};
-	static int[] hargaPacking = {0, 3000, 15000};
-	
-	
-	static void tampilLayanan(){
-	  System.out.println("\n---Pilihan Layanan---\n");
-    for (int i=0; i<jenisLayanan.length; i++) {
-      System.out.println((i+1) + ". " + jenisLayanan[i]);
+  static String[] alamat = new String[2];
+  static String[] noHP = new String[2];
+  static String[] nama = new String[2];
+  static String[] jenisLayanan = { "Reguler", "Kilat", "Ekonomis", "Special Service" };
+  static int[] hargaLayanan = { 7000, 10000, 4000, 15000 };
+  public static double[][] koordinat = { { 311, 93 }, { 564, 290 }, { 226, 268 }, { 159, 107 }, /** 5. */
+      { 495, 225 }, { 283, 105 }, { 459, 274 }, { 229, 169 }, { 206, 214 }, /* 10. */{ 246, 95 }, { 374, 270 },
+      { 131, 186 }, { 82, 190 }, { 286, 276 }, /** 15. */
+      { 267, 172 }, { 181, 172 }, { 101, 151 }, { 41, 276 }, { 432, 105 }, /** 20. */
+      { 320, 204 }, { 102, 232 }, { 404, 222 }, { 380, 115 }, { 312, 156 }, /** 25. */
+      { 516, 197 }, { 486, 90 }, { 136, 260 }, { 197, 72 }, { 168, 255 }, /* 30. */{ 274, 214 }, { 214, 260 },
+      { 191, 219 }, { 112, 186 }, { 290, 241 }, /** 35. */
+      { 259, 159 }, { 334, 190 }, { 384, 210 }, { 303, 128 } };
+  static String[] jenisPacking = { "Tanpa Tambahan", "Tambah Packing Kardus", "Tambah Packing Kardus" };
+  static int[] hargaPacking = { 0, 3000, 15000 };
+
+  static void tampilLayanan() {
+    System.out.println("\n---Pilihan Layanan---\n");
+    for (int i = 0; i < jenisLayanan.length; i++) {
+      System.out.println((i + 1) + ". " + jenisLayanan[i]);
     }
-  }			
-  
-  static void tampilPacking(){
-	  System.out.println("\n---Pilihan Packing---\n");
-    for (int i=0; i<jenisPacking.length; i++) {
-      System.out.println((i+1) + ". " + jenisPacking[i]);
+  }
+
+  static void tampilPacking() {
+    System.out.println("\n---Pilihan Packing---\n");
+    for (int i = 0; i < jenisPacking.length; i++) {
+      System.out.println((i + 1) + ". " + jenisPacking[i]);
     }
-  }		
+  }
 
   public static void judul() {
     System.out.println("\t\t         SELAMAT DATANG           ");
@@ -59,15 +68,6 @@ public class mulai {
     }
   }
 
-  public static double[][] koordinat = { { 311, 93 }, { 564, 290 }, { 226, 268 }, { 159, 107 }, /** 5. */
-      { 495, 225 }, { 283, 105 }, { 459, 274 }, { 229, 169 }, { 206, 214 }, /* 10. */{ 246, 95 }, { 374, 270 },
-      { 131, 186 }, { 82, 190 }, { 286, 276 }, /** 15. */
-      { 267, 172 }, { 181, 172 }, { 101, 151 }, { 41, 276 }, { 432, 105 }, /** 20. */
-      { 320, 204 }, { 102, 232 }, { 404, 222 }, { 380, 115 }, { 312, 156 }, /** 25. */
-      { 516, 197 }, { 486, 90 }, { 136, 260 }, { 197, 72 }, { 168, 255 }, /* 30. */{ 274, 214 }, { 214, 260 },
-      { 191, 219 }, { 112, 186 }, { 290, 241 }, /** 35. */
-      { 259, 159 }, { 334, 190 }, { 384, 210 }, { 303, 128 } };
-
   public static void tampilinBagus() {
     System.out.println("Pilihan Kota/Kabupaten");
     System.out.println("1. Kab. Bangkalan   11. Kab. Lumajang   21. Kab. Ponorogo     31. Kota Blitar");
@@ -98,13 +98,10 @@ public class mulai {
     return hasil;
   }
 
-  static String[] alamat = new String[2];
-  static String[] noHP = new String[2];
-  static String[] nama = new String[2];
-
   public static void main(String[] args) {
     Scanner pb = new Scanner(System.in);
 
+    // fikril_Ha
     judul();
     // pengirim
     System.out.println("-------Pengirim-------");
@@ -134,6 +131,7 @@ public class mulai {
     int jarak = (int) jarak(asal, tujuan);
     Scanner input = new Scanner(System.in);
 
+    // puput
     tampilBarang();
 
     System.out.print("\nPilih jenis barang : ");
@@ -157,17 +155,17 @@ public class mulai {
     int hargaPerBerat = (int) barang(berat, jml);
     System.out.println("Harga menurut berat barang : Rp. " + barang(berat, jml));
 
-    //laila
-    	 tampilLayanan();
-	 System.out.print("\nMasukkan Pilihan Layanan: ");
-     int layanan = sc.nextInt()-1;
-	 System.out.println("Harga: Rp. "+hargaLayanan[layanan]);
-	 
-	 tampilPacking();
-	 System.out.print("\nMasukkan Pilihan Packing: ");
-     int pack = sc.nextInt()-1;
-	 System.out.println("Harga: Rp. "+hargaPacking[pack]);
-	 System.out.print("----------------------------");
-	 System.out.println("\nTotal: Rp. " +(hargaLayanan[layanan]+hargaPacking[pack]));
+    // laila
+    tampilLayanan();
+    System.out.print("\nMasukkan Pilihan Layanan: ");
+    int layanan = sc.nextInt() - 1;
+    System.out.println("Harga: Rp. " + hargaLayanan[layanan]);
+
+    tampilPacking();
+    System.out.print("\nMasukkan Pilihan Packing: ");
+    int pack = sc.nextInt() - 1;
+    System.out.println("Harga: Rp. " + hargaPacking[pack]);
+    System.out.print("----------------------------");
+    System.out.println("\nTotal: Rp. " + (hargaLayanan[layanan] + hargaPacking[pack]));
   }
 }
