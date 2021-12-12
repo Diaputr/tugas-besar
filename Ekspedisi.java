@@ -267,8 +267,5 @@ public class Ekspedisi {
 	
     System.out.println("\n\n\t\t\t             Terima Kasih !!!             ");
     System.out.println("\t\t\tAnda Telah Menggunakan Jasa Ekspedisi Kami");
-	
-	
-	
   }
 }
