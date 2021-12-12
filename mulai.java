@@ -208,7 +208,7 @@ public class mulai {
     int pack = sc.nextInt() - 1;
     System.out.println("Harga: Rp. " + hargaPacking[pack]);
     System.out.println("Harga Berdasarkan Layanan dan Packing: Rp. " + (hargaLayanan[layanan] + hargaPacking[pack]));
-	System.out.println("\n\t\t\t             Terima Kasih !!!             ");
+	  System.out.println("\n\t\t\t             Terima Kasih !!!             ");
     System.out.println("\t\t\tAnda Telah Menggunakan Jasa Ekspedisi Kami");
   }
 }
