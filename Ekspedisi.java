@@ -201,7 +201,6 @@ public class Ekspedisi {
 
     // bayar per berat dan jumlah
     int hargaPerBerat = (int) menghitungHargaBarangPerBerat(berat, jml);
-    System.out.println("Harga Berdasarkan Berat Barang: Rp. " + menghitungHargaBarangPerBerat(berat, jml));
 
     // laila
     Scanner sc = new Scanner(System.in);
@@ -216,7 +215,7 @@ public class Ekspedisi {
     System.out.println("Harga Berdasarkan Layanan dan Packing: Rp. " + (hargaLayanan[layanan] + hargaPacking[pack]));
 	
     //bayar
-    System.out.println("\n------- Pilih Pembayaran -------");
+    System.out.println("\n------- Pilihan Pembayaran -------");
     String in = "0";
     String kembalian = "Belum Dipilih";
     System.out.println("Pilih Pembayaran: ");
