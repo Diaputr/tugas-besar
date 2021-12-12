@@ -1,19 +1,38 @@
-package com.Math;
 import java.util.Random;
+import java.util.Calendar;
+import java.sql.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Scanner;
+import java.util.spi.CalendarNameProvider;
 
 public class Ekspedisi {
 
-  public static Scanner pb = new Scanner(System.in);
-	
+  public static String tanggalPengiriman;
+  public static String nomorResi; 
+  public Ekspedisi() {
+    DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+    Calendar cal = Calendar.getInstance();
+    tanggalPengiriman = dateFormat.format(cal.getTime());
+    nomorResi = tampilkanTanggal();
+  }
+
+  public static String tampilkanTanggal() {
+    DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+    Calendar cal = Calendar.getInstance();
+
+    return dateFormat.format(cal.getTime());
+  }
+
   public static void judul() {
     System.out.println("\t\t\t         SELAMAT DATANG           ");
     System.out.println("\t\t\t--------------------------------");
     System.out.println("\t\t\t   ~PAKET JAWA TIMUR SENTOSA~     ");
     System.out.println("\t\t\tSIAP MELAYANI SAMPAI GULUNG TIKAR ");
   }
-	
-  public static String[] nama = new String[2];
+
+	public static Scanner pb = new Scanner(System.in);
+  public static String[] namaCustom = new String[2];
   public static String[] noHP = new String[2];
   public static String[] alamat = new String[2];
 
@@ -41,6 +60,54 @@ public class Ekspedisi {
       { 259, 159 }, { 334, 190 }, { 384, 210 }, { 303, 128 } };
 	
 
+ // pengirim
+ public static int inputPengirim() {
+  System.out.println("\n------- Pengirim -------");
+  System.out.print("Nama Pengirim: ");
+  namaCustom[0] = pb.nextLine();
+  System.out.print("Nomor HP Pengirim: ");
+  noHP[0] = pb.nextLine();
+  tampilinBagus();
+  System.out.print("Masukkan Asal: ");
+  int asal = pb.nextInt() - 1;
+  pb.nextLine();
+  System.out.print("Alamat Rinci Pengirim: ");
+  alamat[0] = pb.nextLine();
+  return asal;
+}
+
+public static int inputPenerima() {
+  System.out.println("\n------- Penerima -------");
+  System.out.print("Nama Penerima: ");
+  namaCustom[1] = pb.nextLine();
+  System.out.print("Nomor HP Penerima: ");
+  noHP[1] = pb.nextLine();
+  tampilinBagus();
+  System.out.print("Masukkan Tujuan: ");
+  int tujuan = pb.nextInt() - 1;
+  pb.nextLine();
+  System.out.print("Alamat Rinci Penerima: ");
+  alamat[1] = pb.nextLine();
+  return tujuan;
+}
+
+public static double jarak(int a, int b) {
+  double x = 0, y = 0, jarak = 0, hasil = 0;
+  if (a == b) {
+    x = koordinat[a][0];
+    y = koordinat[a][1];
+    jarak = Math.sqrt((x * x) + (y * y));
+    hasil = jarak * 100;
+  } else {
+    x = koordinat[b][0] - koordinat[a][0];
+    y = koordinat[b][1] - koordinat[a][1];
+    jarak = Math.sqrt((x * x) + (y * y));
+    hasil = jarak * 100;
+  }
+  return hasil;
+}
+
+
   //barang
   public static String[] jenisBarang = { "Elektronik/Gadget", "Farmasi/Kosmetik", "Makanan/Minuman", "Pakaian",
       "Pecah Belah" };
@@ -52,7 +119,7 @@ public class Ekspedisi {
     }
   }
 	
-  public static double menghitungHargaBarangPerBerat(double berat, double jml) {
+  public static double menghitungHargaBarangPerBerat(double berat, int jml) {
     int[] harga = { 5000, 10000, 15000 };
     double bayar = 0;
     if (berat >= 0 && berat < 5) {
@@ -102,80 +169,35 @@ public class Ekspedisi {
     return kode;
   }
 
-  public static void menampilkanOutput(int[] lacak, String[] pengirim, String[] penerima, String jenis, int berat,
-    int perhitungan, String pembayaran, String Layanan) {
-    System.out.println("========== Bukti Pengiriman ==========");
-    System.out.print("No Resi : ");
+  public static void menampilkanOutput(int[] lacak, String[] pengirim, int jenis, String nama, double berat, int jml,
+    int perhitungan, String pembayaran, int Layanan, String keterangan) {
+    System.out.println("\n============ Bukti Pengiriman ============");
+    System.out.print("No Resi: ");
     for (int a = 0; a < lacak.length; a++) {
       System.out.print(lacak[a]);
     }
-    System.out.println("\n------------");
-    System.out.println("Pengirim : ");
-    for (String pengirim1 : pengirim) {
-      System.out.print("\t");
-      System.out.println(pengirim1);
-    }
-    System.out.println("Penerima : ");
-    for (String penerima1 : penerima) {
-      System.out.print("\t");
-      System.out.println(penerima1);
-    }
-    System.out.println("Jenis Barang : " + jenis);
-    System.out.println("Berat Barang : " + berat);
-    System.out.println("Jenis Layanan : " + Layanan);
-    System.out.println("Tarif : " + perhitungan);
-    System.out.println("Jenis Pembayaran : " + pembayaran);
+    System.out.print("\nTanggal: ");
+    System.out.println(tampilkanTanggal());
+    System.out.println("\n-----------------------------------------");
+    System.out.println("Pengirim          : " + pengirim[0]);
+    System.out.println("Penerima          : " + pengirim[1]);
+    System.out.println("Jenis Barang      : " + jenisBarang[jenis]);
+    System.out.println("Nama Barang       : " + nama);
+    System.out.printf("Berat Barang      : %.2f Kg\n", berat);
+    System.out.println("Jumlah Barang     : " + jml);
+    System.out.println("Jenis Layanan     : " + jenisLayanan[Layanan]);
+    System.out.println("Tarif             : Rp. " + perhitungan);
+    System.out.println("Jenis Pembayaran  : " + pembayaran);
+    System.out.println("Keterangan        : " + keterangan);
   }
 	
-  // pengirim
-  public static int inputPengirim() {
-    System.out.println("\n------- Pengirim -------");
-    System.out.print("Nama Pengirim: ");
-    nama[0] = pb.nextLine();
-    System.out.print("Nomor HP Pengirim: ");
-    noHP[0] = pb.nextLine();
-    tampilinBagus();
-    System.out.print("Masukkan Asal: ");
-    int asal = pb.nextInt() - 1;
-    pb.nextLine();
-    System.out.print("Alamat Rinci Pengirim: ");
-    alamat[0] = pb.nextLine();
-    return asal;
-  }
-
-  public static int inputPenerima() {
-    System.out.println("\n------- Penerima -------");
-    System.out.print("Nama Penerima: ");
-    nama[1] = pb.nextLine();
-    System.out.print("Nomor HP Penerima: ");
-    noHP[1] = pb.nextLine();
-    tampilinBagus();
-    System.out.print("Masukkan Tujuan: ");
-    int tujuan = pb.nextInt() - 1;
-    pb.nextLine();
-    System.out.print("Alamat Rinci Penerima: ");
-    alamat[1] = pb.nextLine();
-    return tujuan;
-  }
-
-  public static double jarak(int a, int b) {
-    double x = 0, y = 0, jarak = 0, hasil = 0;
-    if (a == b) {
-      x = koordinat[a][0];
-      y = koordinat[a][1];
-      jarak = Math.sqrt((x * x) + (y * y));
-      hasil = jarak * 100;
-    } else {
-      x = koordinat[b][0] - koordinat[a][0];
-      y = koordinat[b][1] - koordinat[a][1];
-      jarak = Math.sqrt((x * x) + (y * y));
-      hasil = jarak * 100;
-    }
-    return hasil;
-  }
-
 
   public static void main(String[] args) {
+
+    boolean ulang = true;
+    do {
+      
+
     // fikril_Ha
     judul();
     // bayar per jarak
@@ -185,22 +207,24 @@ public class Ekspedisi {
     tampilBarang();
     Scanner input = new Scanner(System.in);
     System.out.print("Pilih Jenis Barang: ");
-    int jenis = input.nextInt();
+    int jenis = input.nextInt() - 1;
 
     input.nextLine();
-    System.out.print("Nama barang: ");
-    String nama = input.nextLine();
+    System.out.print("Nama Barang: ");
+    String namaBarang = input.nextLine();
     System.out.print("Berat Barang (kg): ");
     double berat = input.nextDouble();
+    input.nextLine();
 
     System.out.print("Jumlah Barang: ");
-    double jml = input.nextInt();
+    int jml = input.nextInt();
     input.nextLine();
     System.out.print("Tambah Catatan/Keterangan: ");
     String ket = input.nextLine();
 
     // bayar per berat dan jumlah
     int hargaPerBerat = (int) menghitungHargaBarangPerBerat(berat, jml);
+    System.out.println("Harga Berdasarkan Berat Barang: Rp. " + hargaPerBerat);
 
     // laila
     Scanner sc = new Scanner(System.in);
@@ -212,13 +236,11 @@ public class Ekspedisi {
     System.out.print("Masukkan Pilihan Packing: ");
     int pack = sc.nextInt() - 1;
     System.out.println("Harga: Rp. " + hargaPacking[pack]);
-    System.out.println("Harga Berdasarkan Layanan dan Packing: Rp. " + (hargaLayanan[layanan] + hargaPacking[pack]));
 	
     //bayar
-    System.out.println("\n------- Pilihan Pembayaran -------");
+    System.out.println("\n---------- Pilihan Pembayaran ----------");
     String in = "0";
     String kembalian = "Belum Dipilih";
-    System.out.println("Pilih Pembayaran: ");
     System.out.println("1. Tunai");
     System.out.println("2. Debit");
     System.out.println("3. Kredit");
@@ -262,9 +284,15 @@ public class Ekspedisi {
 		int total = hargaPerJarak + hargaPerBerat + hargaLayanan[layanan] + hargaPacking[pack];
 		System.out.println("Anda Memilih Pembayaran Dengan " + kembalian);
 		System.out.println("Total Pembayaran: Rp. "+total);
-	
-	
+        menampilkanOutput(resi(), namaCustom, jenis, namaBarang, berat, jml, total, kembalian, layanan, ket);
+
+        System.out.print("Apakah Anda Ingin Melakukan Pengiriman Lagi? (Iya/Tidak): ");
+        ulang = input.nextLine().equalsIgnoreCase("iya");
+	    } while (ulang);
     System.out.println("\n\n\t\t\t             Terima Kasih !!!             ");
     System.out.println("\t\t\tAnda Telah Menggunakan Jasa Ekspedisi Kami");
+	
+	
+	
   }
 }
