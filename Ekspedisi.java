@@ -18,7 +18,7 @@ public class Ekspedisi {
   public static String[] alamat = new String[2];
 
   public static void tampilinBagus() {
-    System.out.println("Pilihan Kota/Kabupaten");
+    System.out.println("\nPilihan Kota/Kabupaten");
     System.out.println("1. Kab. Bangkalan   11. Kab. Lumajang   21. Kab. Ponorogo     31. Kota Blitar");
     System.out.println("2. Kab. Banyuwangi  12. Kab. Madiun     22. Kab. Probolinggo  32. Kota Kediri");
     System.out.println("3. Kab. Blitar      13. Kab. Magetan    23. Kab. Sampang      33. Kota Madiun");
@@ -216,11 +216,56 @@ public class Ekspedisi {
     System.out.println("Harga Berdasarkan Layanan dan Packing: Rp. " + (hargaLayanan[layanan] + hargaPacking[pack]));
 	
 	//bayar
-	System.out.println("\n\n\t\t\t--------------------------------");
-	System.out.println("Total pembayaran : Rp. "+(hargaPerJarak + hargaPerBerat + hargaLayanan[layanan] + hargaPacking[pack]));
+	System.out.println("\n---------- Pilih Pembayaran ----------");
+        String in = "0";
+        String kembalian = "Belum Dipilih";
+        System.out.println("Pilih Pembayaran : ");
+        System.out.println("1. Tunai");
+        System.out.println("2. Debit");
+        System.out.println("3. Kredit");
+        System.out.println("4. COD");
+        System.out.println("5. E-Wallet");
+		sc.nextLine();
+        System.out.print("Masukkan Jenis Pembayaran: ");
+        in = sc.nextLine();
+        switch (in){
+            case "1" :
+                kembalian = "Tunai";
+            break;
+            case "2" :
+                kembalian = "Debit";
+            break;
+            case "3" :
+                kembalian = "Kredit";
+            break;
+            case "4" :
+                kembalian = "Cash On Delivery";
+            break;
+            case "5" :
+                System.out.println("Pilih Jenis E-wallet: ");
+                System.out.println("1. Link Aja");
+                System.out.println("2. Ovo");
+                System.out.println("3. Gopay");
+                System.out.print("Masukkan Pilihan: ");
+                String pil = sc.nextLine();
+                switch (pil){
+                    case "1" :
+                        kembalian = "Link Aja";
+                    break;
+                    case "2" :
+                        kembalian = "Ovo";
+                    break;
+                    case "3" :
+                        kembalian = "Gopay";
+                    break;
+                }
+        }
+		int total = hargaPerJarak + hargaPerBerat + hargaLayanan[layanan] + hargaPacking[pack];
+		System.out.println("Anda memilih pembayaran dengan " + kembalian);
+		System.out.println("Total pembayaran: Rp. "+total);
 	
 	
-    System.out.println("\n\t\t\t             Terima Kasih !!!             ");
+    System.out.println("\n\n\t\t\t             Terima Kasih !!!             ");
     System.out.println("\t\t\tAnda Telah Menggunakan Jasa Ekspedisi Kami");
 	
 	
