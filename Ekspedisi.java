@@ -216,10 +216,10 @@ public class Ekspedisi {
     System.out.println("Harga Berdasarkan Layanan dan Packing: Rp. " + (hargaLayanan[layanan] + hargaPacking[pack]));
 	
     //bayar
-    System.out.println("\n---------- Pilih Pembayaran ----------");
+    System.out.println("\n------- Pilih Pembayaran -------");
     String in = "0";
     String kembalian = "Belum Dipilih";
-    System.out.println("Pilih Pembayaran : ");
+    System.out.println("Pilih Pembayaran: ");
     System.out.println("1. Tunai");
     System.out.println("2. Debit");
     System.out.println("3. Kredit");
@@ -261,8 +261,8 @@ public class Ekspedisi {
                 }
         }
 		int total = hargaPerJarak + hargaPerBerat + hargaLayanan[layanan] + hargaPacking[pack];
-		System.out.println("Anda memilih pembayaran dengan " + kembalian);
-		System.out.println("Total pembayaran: Rp. "+total);
+		System.out.println("Anda Memilih Pembayaran Dengan " + kembalian);
+		System.out.println("Total Pembayaran: Rp. "+total);
 	
 	
     System.out.println("\n\n\t\t\t             Terima Kasih !!!             ");
