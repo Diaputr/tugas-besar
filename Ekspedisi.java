@@ -215,16 +215,16 @@ public class Ekspedisi {
     System.out.println("Harga: Rp. " + hargaPacking[pack]);
     System.out.println("Harga Berdasarkan Layanan dan Packing: Rp. " + (hargaLayanan[layanan] + hargaPacking[pack]));
 	
-	//bayar
-	System.out.println("\n---------- Pilih Pembayaran ----------");
-        String in = "0";
-        String kembalian = "Belum Dipilih";
-        System.out.println("Pilih Pembayaran : ");
-        System.out.println("1. Tunai");
-        System.out.println("2. Debit");
-        System.out.println("3. Kredit");
-        System.out.println("4. COD");
-        System.out.println("5. E-Wallet");
+    //bayar
+    System.out.println("\n---------- Pilih Pembayaran ----------");
+    String in = "0";
+    String kembalian = "Belum Dipilih";
+    System.out.println("Pilih Pembayaran : ");
+    System.out.println("1. Tunai");
+    System.out.println("2. Debit");
+    System.out.println("3. Kredit");
+    System.out.println("4. COD");
+    System.out.println("5. E-Wallet");
 		sc.nextLine();
         System.out.print("Masukkan Jenis Pembayaran: ");
         in = sc.nextLine();
