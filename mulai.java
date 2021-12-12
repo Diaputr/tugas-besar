@@ -198,7 +198,7 @@ public class mulai {
     inputInformasiBarang();
 
     // laila
-	  Scanner sc = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
     tampilLayanan();
     System.out.print("Masukkan Pilihan Layanan: ");
     int layanan = sc.nextInt() - 1;
