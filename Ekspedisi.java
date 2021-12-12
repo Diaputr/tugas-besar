@@ -174,7 +174,15 @@ public class Ekspedisi {
     return hasil;
   }
 
-  public static void inputInformasiBarang() {
+
+  public static void main(String[] args) {
+    // fikril_Ha
+    judul();
+    // bayar per jarak
+    int hargaPerJarak = (int) jarak(inputPengirim(), inputPenerima());
+	System.out.println("Harga Berdasarkan Jarak: Rp. " + hargaPerJarak);
+    // puput
+    tampilBarang();
     Scanner input = new Scanner(System.in);
     System.out.print("Pilih Jenis Barang: ");
     int jenis = input.nextInt();
@@ -194,17 +202,6 @@ public class Ekspedisi {
     // bayar per berat dan jumlah
     int hargaPerBerat = (int) menghitungHargaBarangPerBerat(berat, jml);
     System.out.println("Harga Berdasarkan Berat Barang: Rp. " + menghitungHargaBarangPerBerat(berat, jml));
-  }
-
-  public static void main(String[] args) {
-    // fikril_Ha
-    judul();
-    // bayar per jarak
-    int hargaPerJarak = (int) jarak(inputPengirim(), inputPenerima());
-	System.out.println("Harga Berdasarkan Jarak: Rp. " + hargaPerJarak);
-    // puput
-    tampilBarang();
-    inputInformasiBarang();
 
     // laila
     Scanner sc = new Scanner(System.in);
@@ -217,7 +214,16 @@ public class Ekspedisi {
     int pack = sc.nextInt() - 1;
     System.out.println("Harga: Rp. " + hargaPacking[pack]);
     System.out.println("Harga Berdasarkan Layanan dan Packing: Rp. " + (hargaLayanan[layanan] + hargaPacking[pack]));
+	
+	//bayar
+	System.out.println("\n\n\t\t\t--------------------------------");
+	System.out.println("Total pembayaran : Rp. "+(hargaPerJarak + hargaPerBerat + hargaLayanan[layanan] + hargaPacking[pack]));
+	
+	
     System.out.println("\n\t\t\t             Terima Kasih !!!             ");
     System.out.println("\t\t\tAnda Telah Menggunakan Jasa Ekspedisi Kami");
+	
+	
+	
   }
 }
