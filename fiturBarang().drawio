@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-13T02:46:18.878Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.23" etag="VJ-cudXFkXIMCRTS_0ik" version="15.9.4" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-12-13T02:47:52.559Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.23" etag="seAIncZtqwOTjj003hwA" version="15.9.4" type="github" pages="3">
   <diagram id="_1Eji3tn8XVNdwe3SPvd" name="fitur">
     <mxGraphModel dx="2250" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -99,7 +99,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="DvL--JSAcVq9bxnd1R_u" name="hitungPerberat">
-    <mxGraphModel dx="1400" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1510" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="eOAq0Xc5gG7nsLpVQCI0-0" />
         <mxCell id="eOAq0Xc5gG7nsLpVQCI0-1" parent="eOAq0Xc5gG7nsLpVQCI0-0" />
@@ -111,11 +111,11 @@
         </mxCell>
         <mxCell id="WpOSSbLNDSWjCex7dsGy-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="eOAq0Xc5gG7nsLpVQCI0-1" target="WpOSSbLNDSWjCex7dsGy-11">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="461.2349999999998" y="690" as="sourcePoint" />
+            <mxPoint x="461.2349999999998" y="650" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="WpOSSbLNDSWjCex7dsGy-11" value="selesai" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="eOAq0Xc5gG7nsLpVQCI0-1">
-          <mxGeometry x="387.02" y="750" width="148.43" height="50" as="geometry" />
+          <mxGeometry x="387.02" y="710" width="148.43" height="50" as="geometry" />
         </mxCell>
         <mxCell id="Wu6AjPHZe0yAYPErIOnE-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="eOAq0Xc5gG7nsLpVQCI0-1" source="l_6wMNTGR5B46RGouBkO-0" target="Wu6AjPHZe0yAYPErIOnE-2">
           <mxGeometry relative="1" as="geometry" />
@@ -148,13 +148,13 @@
           <mxGeometry x="619.83" y="290" width="170" height="150" as="geometry" />
         </mxCell>
         <mxCell id="2xEYrqJC-XaCAN6UodVN-4" value="bayar = berat * jml * harga[0]" style="whiteSpace=wrap;html=1;" vertex="1" parent="eOAq0Xc5gG7nsLpVQCI0-1">
-          <mxGeometry x="107.02000000000001" y="565" width="188.77" height="60" as="geometry" />
+          <mxGeometry x="107.02000000000001" y="520" width="188.77" height="60" as="geometry" />
         </mxCell>
         <mxCell id="2xEYrqJC-XaCAN6UodVN-6" value="&lt;span&gt;bayar = berat * jml * harga[1]&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="eOAq0Xc5gG7nsLpVQCI0-1">
-          <mxGeometry x="366.85" y="565" width="188.77" height="60" as="geometry" />
+          <mxGeometry x="366.85" y="520" width="188.77" height="60" as="geometry" />
         </mxCell>
         <mxCell id="2xEYrqJC-XaCAN6UodVN-8" value="&lt;span&gt;bayar = berat * jml * harga[2]&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="eOAq0Xc5gG7nsLpVQCI0-1">
-          <mxGeometry x="612.24" y="565" width="185.17" height="60" as="geometry" />
+          <mxGeometry x="612.24" y="520" width="185.17" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
