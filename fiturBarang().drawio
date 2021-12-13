@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-13T02:31:16.175Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.23" etag="_8FAPvVyzUOG_AIOTk6a" version="15.9.4" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-12-13T02:32:05.362Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.23" etag="IlD5EhoKloA4jkbvxzaJ" version="15.9.4" type="github" pages="3">
   <diagram id="_1Eji3tn8XVNdwe3SPvd" name="fitur">
     <mxGraphModel dx="1400" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -60,8 +60,8 @@
         <mxCell id="5ZYULevYrIwu_5AvUxBj-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Yu19_bxgPYHYCtOx-w8t-1" source="e-0vPw9SeARD4hIcXQrp-1" target="5ZYULevYrIwu_5AvUxBj-0">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e-0vPw9SeARD4hIcXQrp-1" value="tampilBarang()" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="Yu19_bxgPYHYCtOx-w8t-1">
-          <mxGeometry x="157.19" y="50" width="168.75" height="60" as="geometry" />
+        <mxCell id="e-0vPw9SeARD4hIcXQrp-1" value="tampilBarang(double berat, int jml)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="Yu19_bxgPYHYCtOx-w8t-1">
+          <mxGeometry x="120.16" y="50" width="242.81" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5ZYULevYrIwu_5AvUxBj-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Yu19_bxgPYHYCtOx-w8t-1" source="5ZYULevYrIwu_5AvUxBj-0" target="5ZYULevYrIwu_5AvUxBj-4">
           <mxGeometry relative="1" as="geometry" />
