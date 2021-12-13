@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-12-13T02:32:05.362Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.23" etag="IlD5EhoKloA4jkbvxzaJ" version="15.9.4" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-12-13T02:34:04.360Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.23" etag="E1Ej-j_84JW2-83iXCKb" version="15.9.4" type="github" pages="3">
   <diagram id="_1Eji3tn8XVNdwe3SPvd" name="fitur">
-    <mxGraphModel dx="1400" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2250" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -14,40 +14,40 @@
         </mxCell>
         <mxCell id="o9s-SpRbHLdgKH6kMi-r-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="o9s-SpRbHLdgKH6kMi-r-31" target="o9s-SpRbHLdgKH6kMi-r-35" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="200" y="410" as="targetPoint" />
+            <mxPoint x="192.5" y="450" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="o9s-SpRbHLdgKH6kMi-r-31" value="tampilBarang()" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.05;" parent="1" vertex="1">
-          <mxGeometry x="100" y="270" width="200" height="60" as="geometry" />
+          <mxGeometry x="92.5" y="310" width="200" height="60" as="geometry" />
         </mxCell>
         <mxCell id="o9s-SpRbHLdgKH6kMi-r-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="o9s-SpRbHLdgKH6kMi-r-35" target="o9s-SpRbHLdgKH6kMi-r-38" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="o9s-SpRbHLdgKH6kMi-r-35" value="jenis, nama, berat, jml, ket" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="87.5" y="370" width="225" height="60" as="geometry" />
+          <mxGeometry x="80" y="410" width="225" height="60" as="geometry" />
         </mxCell>
         <mxCell id="o9s-SpRbHLdgKH6kMi-r-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="o9s-SpRbHLdgKH6kMi-r-40" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="200" y="640" as="sourcePoint" />
+            <mxPoint x="192.5" y="680" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="VYfUZru3v0xJsLxVJvdt-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o9s-SpRbHLdgKH6kMi-r-38" target="VYfUZru3v0xJsLxVJvdt-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="o9s-SpRbHLdgKH6kMi-r-38" value="hitungHargaPerBerat(berat, jml)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.047619047619047616;" parent="1" vertex="1">
-          <mxGeometry x="95" y="480" width="210" height="60" as="geometry" />
+          <mxGeometry x="87.5" y="520" width="210" height="60" as="geometry" />
         </mxCell>
         <mxCell id="o9s-SpRbHLdgKH6kMi-r-40" value="selesai" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="140" y="700" width="120" height="40" as="geometry" />
+          <mxGeometry x="132.5" y="740" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="o9s-SpRbHLdgKH6kMi-r-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="o9s-SpRbHLdgKH6kMi-r-42" target="o9s-SpRbHLdgKH6kMi-r-31" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="o9s-SpRbHLdgKH6kMi-r-42" value="&lt;br&gt;&lt;div&gt;String[] jenisBarang = {&quot;Elektronik/Gadget&quot;, &quot;Farmasi/Kosmetik&quot;, &quot;Makanan/Minuman&quot;, &quot;Pakaian&quot;,&amp;nbsp;&quot;Pecah Belah&quot;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="38.75" y="150" width="322.5" height="70" as="geometry" />
+        <mxCell id="o9s-SpRbHLdgKH6kMi-r-42" value="&lt;br&gt;&lt;div&gt;String[] jenisBarang = {&quot;Elektronik/Gadget&quot;, &quot;Farmasi/Kosmetik&quot;, &quot;Makanan/Minuman&quot;, &quot;Pakaian&quot;,&amp;nbsp;&quot;Pecah Belah&quot;}&lt;/div&gt;&lt;div&gt;String nama;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span&gt;double berat;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;/span&gt;&lt;span&gt;int jml;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;/span&gt;&lt;span&gt;String ket;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="-8.12" y="170" width="401.25" height="90" as="geometry" />
         </mxCell>
         <mxCell id="VYfUZru3v0xJsLxVJvdt-1" value="harga per berat" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-          <mxGeometry x="95" y="590" width="210" height="60" as="geometry" />
+          <mxGeometry x="87.5" y="630" width="210" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
