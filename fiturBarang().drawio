@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-13T02:37:39.719Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.23" etag="hyraOnEj_OEb144aFvCW" version="15.9.4" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-12-13T02:40:15.518Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.23" etag="HtwqEG6re_nMcAgJaJOI" version="15.9.4" type="github" pages="3">
   <diagram id="_1Eji3tn8XVNdwe3SPvd" name="fitur">
     <mxGraphModel dx="2250" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -60,7 +60,7 @@
         <mxCell id="5ZYULevYrIwu_5AvUxBj-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Yu19_bxgPYHYCtOx-w8t-1" source="e-0vPw9SeARD4hIcXQrp-1" target="5ZYULevYrIwu_5AvUxBj-0">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e-0vPw9SeARD4hIcXQrp-1" value="tampilBarang(double berat, int jml)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="Yu19_bxgPYHYCtOx-w8t-1">
+        <mxCell id="e-0vPw9SeARD4hIcXQrp-1" value="tampilBarang()" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="Yu19_bxgPYHYCtOx-w8t-1">
           <mxGeometry x="120.16" y="50" width="242.81" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5ZYULevYrIwu_5AvUxBj-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Yu19_bxgPYHYCtOx-w8t-1" source="5ZYULevYrIwu_5AvUxBj-0" target="5ZYULevYrIwu_5AvUxBj-4">
@@ -106,8 +106,8 @@
         <mxCell id="l_6wMNTGR5B46RGouBkO-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="eOAq0Xc5gG7nsLpVQCI0-1" source="WpOSSbLNDSWjCex7dsGy-1" target="l_6wMNTGR5B46RGouBkO-0">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WpOSSbLNDSWjCex7dsGy-1" value="hitungHargaPerBerat()" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="eOAq0Xc5gG7nsLpVQCI0-1">
-          <mxGeometry x="157.19" y="50" width="168.75" height="60" as="geometry" />
+        <mxCell id="WpOSSbLNDSWjCex7dsGy-1" value="hitungHargaPerBerat(double berat, int jml)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="eOAq0Xc5gG7nsLpVQCI0-1">
+          <mxGeometry x="80.17" y="60" width="322.81" height="60" as="geometry" />
         </mxCell>
         <mxCell id="WpOSSbLNDSWjCex7dsGy-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="eOAq0Xc5gG7nsLpVQCI0-1" target="WpOSSbLNDSWjCex7dsGy-11">
           <mxGeometry relative="1" as="geometry">
@@ -117,8 +117,14 @@
         <mxCell id="WpOSSbLNDSWjCex7dsGy-11" value="selesai" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="eOAq0Xc5gG7nsLpVQCI0-1">
           <mxGeometry x="167.36" y="610" width="148.43" height="50" as="geometry" />
         </mxCell>
+        <mxCell id="Wu6AjPHZe0yAYPErIOnE-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="eOAq0Xc5gG7nsLpVQCI0-1" source="l_6wMNTGR5B46RGouBkO-0" target="Wu6AjPHZe0yAYPErIOnE-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="l_6wMNTGR5B46RGouBkO-0" value="int[] harga = {5000,10000,15000};&lt;br&gt;double bayar = 0;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="eOAq0Xc5gG7nsLpVQCI0-1">
           <mxGeometry x="127.35" y="170" width="228.43" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Wu6AjPHZe0yAYPErIOnE-2" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="eOAq0Xc5gG7nsLpVQCI0-1">
+          <mxGeometry x="157.19" y="290" width="168.44" height="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
