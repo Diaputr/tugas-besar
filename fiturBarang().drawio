@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-13T06:33:10.403Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.23" etag="Ky_KCb9O7X78k0l4Yfxn" version="15.9.4" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-12-13T06:33:41.212Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.23" etag="uGZy9LKf02TQw8e6cxbX" version="15.9.4" type="github" pages="4">
   <diagram id="_1Eji3tn8XVNdwe3SPvd" name="fitur">
     <mxGraphModel dx="1732" dy="766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -523,6 +523,9 @@
         <mxCell id="T51BmsWC3B2X2TOryXSr-49" value="kembalian" style="whiteSpace=wrap;html=1;" vertex="1" parent="U5RIP8ibkCTpUNht2OfJ-1">
           <mxGeometry x="866.4300000000001" y="1030" width="128.57" height="35" as="geometry" />
         </mxCell>
+        <mxCell id="T51BmsWC3B2X2TOryXSr-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="U5RIP8ibkCTpUNht2OfJ-1" source="T51BmsWC3B2X2TOryXSr-50" target="T51BmsWC3B2X2TOryXSr-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="T51BmsWC3B2X2TOryXSr-50" value="&quot;Bayar melalui&quot; + kembalian" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="U5RIP8ibkCTpUNht2OfJ-1">
           <mxGeometry x="390" y="1270" width="217.5" height="50" as="geometry" />
         </mxCell>
@@ -547,6 +550,9 @@
         </mxCell>
         <mxCell id="T51BmsWC3B2X2TOryXSr-62" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="U5RIP8ibkCTpUNht2OfJ-1">
           <mxGeometry x="705" y="1160" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T51BmsWC3B2X2TOryXSr-69" value="selesai" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="U5RIP8ibkCTpUNht2OfJ-1">
+          <mxGeometry x="423.13" y="1370" width="151.25" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
