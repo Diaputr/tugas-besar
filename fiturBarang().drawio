@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-12-13T02:17:54.635Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.23" etag="5i5CftSQTQYIgeyhsTS9" version="15.9.4" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-12-13T02:21:04.838Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.23" etag="zDsp3kGM2imgsX3i3C2L" version="15.9.4" type="github" pages="2">
   <diagram id="_1Eji3tn8XVNdwe3SPvd" name="fitur">
-    <mxGraphModel dx="1400" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1068" dy="452" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -45,7 +45,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="umoTx6lyBB9Eg3Z3ZKNX" name="tampil ">
-    <mxGraphModel dx="948" dy="395" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1068" dy="452" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="Yu19_bxgPYHYCtOx-w8t-0" />
         <mxCell id="Yu19_bxgPYHYCtOx-w8t-1" parent="Yu19_bxgPYHYCtOx-w8t-0" />
@@ -78,7 +78,7 @@
         <mxCell id="5ZYULevYrIwu_5AvUxBj-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="Yu19_bxgPYHYCtOx-w8t-1" source="5ZYULevYrIwu_5AvUxBj-12" target="5ZYULevYrIwu_5AvUxBj-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5ZYULevYrIwu_5AvUxBj-12" value="" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="Yu19_bxgPYHYCtOx-w8t-1">
+        <mxCell id="5ZYULevYrIwu_5AvUxBj-12" value="jenisBarang[i]" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="Yu19_bxgPYHYCtOx-w8t-1">
           <mxGeometry x="166.57" y="460" width="150" height="60" as="geometry" />
         </mxCell>
       </root>
