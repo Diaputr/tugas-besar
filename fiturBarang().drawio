@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-13T06:15:51.223Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.23" etag="B4yA99yC99pwSB82pOqE" version="15.9.4" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-12-13T06:16:23.202Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.23" etag="qPRce27kHIyI5znJDBNE" version="15.9.4" type="github" pages="4">
   <diagram id="_1Eji3tn8XVNdwe3SPvd" name="fitur">
     <mxGraphModel dx="1732" dy="766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -325,7 +325,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="SI2RMLHVh_pbCDFvgyli" name="bayar">
-    <mxGraphModel dx="1215" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1400" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="U5RIP8ibkCTpUNht2OfJ-0" />
         <mxCell id="U5RIP8ibkCTpUNht2OfJ-1" parent="U5RIP8ibkCTpUNht2OfJ-0" />
@@ -429,7 +429,7 @@
           <mxGeometry x="727.5" y="770" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="T51BmsWC3B2X2TOryXSr-31" value="kembalian" style="whiteSpace=wrap;html=1;" vertex="1" parent="U5RIP8ibkCTpUNht2OfJ-1">
-          <mxGeometry x="950" y="667" width="120" height="43" as="geometry" />
+          <mxGeometry x="930" y="664" width="120" height="43" as="geometry" />
         </mxCell>
         <mxCell id="T51BmsWC3B2X2TOryXSr-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="U5RIP8ibkCTpUNht2OfJ-1" source="T51BmsWC3B2X2TOryXSr-33" target="T51BmsWC3B2X2TOryXSr-35">
           <mxGeometry relative="1" as="geometry" />
