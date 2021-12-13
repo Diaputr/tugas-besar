@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-13T02:42:15.332Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.23" etag="FIlOyexNt6857Zy_8RUB" version="15.9.4" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-12-13T02:42:38.774Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.23" etag="oSgWF-9F3RCrevZus21p" version="15.9.4" type="github" pages="3">
   <diagram id="_1Eji3tn8XVNdwe3SPvd" name="fitur">
     <mxGraphModel dx="2250" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -135,7 +135,7 @@
         <mxCell id="2xEYrqJC-XaCAN6UodVN-0" value="berat &amp;gt;= 5 &amp;amp;&amp;amp; berat &amp;lt; 10" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="eOAq0Xc5gG7nsLpVQCI0-1">
           <mxGeometry x="400" y="290" width="202.81" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="2xEYrqJC-XaCAN6UodVN-1" value="berat &amp;gt;= 0 &amp;amp;&amp;amp; berat &amp;lt; 5" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="eOAq0Xc5gG7nsLpVQCI0-1">
+        <mxCell id="2xEYrqJC-XaCAN6UodVN-1" value="berat &amp;gt;= 10" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="eOAq0Xc5gG7nsLpVQCI0-1">
           <mxGeometry x="660" y="290" width="202.81" height="150" as="geometry" />
         </mxCell>
       </root>
