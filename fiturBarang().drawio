@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-13T01:56:53.177Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.23" etag="RlnveHSWG09lDK90oo8k" version="15.9.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-12-13T02:06:58.641Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.23" etag="9XyKHCRoaTyBmaprBHNJ" version="15.9.4" type="github" pages="2">
   <diagram id="_1Eji3tn8XVNdwe3SPvd" name="fitur">
     <mxGraphModel dx="1400" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -40,6 +40,22 @@
         </mxCell>
         <mxCell id="o9s-SpRbHLdgKH6kMi-r-42" value="&lt;br&gt;&lt;div&gt;String[] jenisBarang = Elektronik/Gadget&quot;, &quot;Farmasi/Kosmetik&quot;, &quot;Makanan/Minuman&quot;, &quot;Pakaian&quot;,&amp;nbsp;&quot;Pecah Belah&quot;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="38.75" y="150" width="322.5" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="umoTx6lyBB9Eg3Z3ZKNX" name="Page-2">
+    <mxGraphModel dx="1400" dy="610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="Yu19_bxgPYHYCtOx-w8t-0" />
+        <mxCell id="Yu19_bxgPYHYCtOx-w8t-1" parent="Yu19_bxgPYHYCtOx-w8t-0" />
+        <mxCell id="e-0vPw9SeARD4hIcXQrp-0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Yu19_bxgPYHYCtOx-w8t-1" source="e-0vPw9SeARD4hIcXQrp-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="241.29999999999995" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-0vPw9SeARD4hIcXQrp-1" value="tampilBarang()" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="Yu19_bxgPYHYCtOx-w8t-1">
+          <mxGeometry x="181.25" y="60" width="120" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
