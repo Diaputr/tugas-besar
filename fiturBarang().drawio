@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-13T04:08:19.763Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.23" etag="Y9AQJ0K2l08lH64EwjW3" version="15.9.4" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-12-13T04:14:28.241Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.23" etag="aD5lX3GvRXt8Tp_9KLGN" version="15.9.4" type="github" pages="3">
   <diagram id="_1Eji3tn8XVNdwe3SPvd" name="fitur">
     <mxGraphModel dx="1732" dy="766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -82,7 +82,7 @@
         <mxCell id="NuKkf9W41WeTTH_sQ7B3-11" value="(i+1) + jenisBarang[i]" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="837" y="403" width="183.43" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="NuKkf9W41WeTTH_sQ7B3-12" value="selesai" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="NuKkf9W41WeTTH_sQ7B3-12" value="return" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="627.19" y="568" width="148.43" height="50" as="geometry" />
         </mxCell>
         <mxCell id="w1LRoSHKd5vlf2nNYfGx-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="w1LRoSHKd5vlf2nNYfGx-2" target="w1LRoSHKd5vlf2nNYfGx-6">
