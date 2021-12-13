@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-13T02:24:10.151Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.23" etag="n7UZWfwS3bVBZaq5juuv" version="15.9.4" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-12-13T02:24:55.645Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.23" etag="fWZ6XfKTSFNCIJa3ejnz" version="15.9.4" type="github" pages="3">
   <diagram id="_1Eji3tn8XVNdwe3SPvd" name="fitur">
     <mxGraphModel dx="1215" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -23,13 +23,13 @@
         <mxCell id="o9s-SpRbHLdgKH6kMi-r-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="o9s-SpRbHLdgKH6kMi-r-35" target="o9s-SpRbHLdgKH6kMi-r-38" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="o9s-SpRbHLdgKH6kMi-r-35" value="jenis, nama, berat, jumlah, ket" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+        <mxCell id="o9s-SpRbHLdgKH6kMi-r-35" value="jenis, nama, berat, jml, ket" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="87.5" y="370" width="225" height="60" as="geometry" />
         </mxCell>
         <mxCell id="o9s-SpRbHLdgKH6kMi-r-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="o9s-SpRbHLdgKH6kMi-r-38" target="o9s-SpRbHLdgKH6kMi-r-40" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="o9s-SpRbHLdgKH6kMi-r-38" value="hitungHargaPerBerat()" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.047619047619047616;" parent="1" vertex="1">
+        <mxCell id="o9s-SpRbHLdgKH6kMi-r-38" value="hitungHargaPerBerat(berat, jml)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.047619047619047616;" parent="1" vertex="1">
           <mxGeometry x="95" y="480" width="210" height="60" as="geometry" />
         </mxCell>
         <mxCell id="o9s-SpRbHLdgKH6kMi-r-40" value="selesai" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
