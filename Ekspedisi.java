@@ -6,24 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Scanner;
 import java.util.spi.CalendarNameProvider;
 
-public class Ekspedisi {
-
-  public static String tanggalPengiriman;
-  public static String nomorResi; 
-  public Ekspedisi() {
-    DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
-    Calendar cal = Calendar.getInstance();
-    tanggalPengiriman = dateFormat.format(cal.getTime());
-    nomorResi = tampilkanTanggal();
-  }
-
-  public static String tampilkanTanggal() {
-    DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
-    Calendar cal = Calendar.getInstance();
-
-    return dateFormat.format(cal.getTime());
-  }
-
+  public class Ekspedisi {
   public static void judul() {
     System.out.println("\t\t\t         SELAMAT DATANG           ");
     System.out.println("\t\t\t--------------------------------");
@@ -31,13 +14,13 @@ public class Ekspedisi {
     System.out.println("\t\t\tSIAP MELAYANI SAMPAI GULUNG TIKAR ");
   }
 
-	public static Scanner pb = new Scanner(System.in);
+  public static Scanner pb = new Scanner(System.in);
   public static String[] namaCustom = new String[2];
   public static String[] noHP = new String[2];
   public static String[] alamat = new String[2];
 
   public static void tampilinBagus() {
-    System.out.println("\nPilihan Kota/Kabupaten");
+    System.out.println("Pilihan Kota/Kabupaten");
     System.out.println("1. Kab. Bangkalan   11. Kab. Lumajang   21. Kab. Ponorogo     31. Kota Blitar");
     System.out.println("2. Kab. Banyuwangi  12. Kab. Madiun     22. Kab. Probolinggo  32. Kota Kediri");
     System.out.println("3. Kab. Blitar      13. Kab. Magetan    23. Kab. Sampang      33. Kota Madiun");
@@ -61,37 +44,37 @@ public class Ekspedisi {
 	
 
  // pengirim
- public static int inputPengirim() {
-  System.out.println("\n------- Pengirim -------");
-  System.out.print("Nama Pengirim: ");
-  namaCustom[0] = pb.nextLine();
-  System.out.print("Nomor HP Pengirim: ");
-  noHP[0] = pb.nextLine();
-  tampilinBagus();
-  System.out.print("Masukkan Asal: ");
-  int asal = pb.nextInt() - 1;
-  pb.nextLine();
-  System.out.print("Alamat Rinci Pengirim: ");
-  alamat[0] = pb.nextLine();
-  return asal;
+  public static int inputPengirim() {
+    System.out.println("\n------- Pengirim -------");
+    System.out.print("Nama Pengirim: ");
+    namaCustom[0] = pb.nextLine();
+    System.out.print("Nomor HP Pengirim: ");
+    noHP[0] = pb.nextLine();
+    tampilinBagus();
+    System.out.print("Masukkan Asal: ");
+    int asal = pb.nextInt() - 1;
+    pb.nextLine();
+    System.out.print("Alamat Rinci Pengirim: ");
+    alamat[0] = pb.nextLine();
+    return asal;
 }
 
-public static int inputPenerima() {
-  System.out.println("\n------- Penerima -------");
-  System.out.print("Nama Penerima: ");
-  namaCustom[1] = pb.nextLine();
-  System.out.print("Nomor HP Penerima: ");
-  noHP[1] = pb.nextLine();
-  tampilinBagus();
-  System.out.print("Masukkan Tujuan: ");
-  int tujuan = pb.nextInt() - 1;
-  pb.nextLine();
-  System.out.print("Alamat Rinci Penerima: ");
-  alamat[1] = pb.nextLine();
-  return tujuan;
+  public static int inputPenerima() {
+    System.out.println("\n------- Penerima -------");
+    System.out.print("Nama Penerima: ");
+    namaCustom[1] = pb.nextLine();
+    System.out.print("Nomor HP Penerima: ");
+    noHP[1] = pb.nextLine();
+    tampilinBagus();
+    System.out.print("Masukkan Tujuan: ");
+    int tujuan = pb.nextInt() - 1;
+    pb.nextLine();
+    System.out.print("Alamat Rinci Penerima: ");
+    alamat[1] = pb.nextLine();
+    return tujuan;
 }
 
-public static double jarak(int a, int b) {
+  public static double jarak(int a, int b) {
   double x = 0, y = 0, jarak = 0, hasil = 0;
   if (a == b) {
     x = koordinat[a][0];
@@ -158,7 +141,21 @@ public static double jarak(int a, int b) {
     }
   }
 	
-	
+  public static String tanggalPengiriman;
+  public static String nomorResi; 
+  public Ekspedisi() {
+    DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+    Calendar cal = Calendar.getInstance();
+    tanggalPengiriman = dateFormat.format(cal.getTime());
+    nomorResi = tampilkanTanggal();
+  }
+
+  public static String tampilkanTanggal() {
+    DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+    Calendar cal = Calendar.getInstance();
+
+    return dateFormat.format(cal.getTime());
+  }
   // resi
   public static int[] resi() {
     Random acak = new Random();
@@ -178,7 +175,7 @@ public static double jarak(int a, int b) {
     }
     System.out.print("\nTanggal: ");
     System.out.println(tampilkanTanggal());
-    System.out.println("\n-----------------------------------------");
+    System.out.println("==========================================");
     System.out.println("Pengirim          : " + pengirim[0]);
     System.out.println("Penerima          : " + pengirim[1]);
     System.out.println("Jenis Barang      : " + jenisBarang[jenis]);
@@ -191,13 +188,11 @@ public static double jarak(int a, int b) {
     System.out.println("Keterangan        : " + keterangan);
   }
 	
-
   public static void main(String[] args) {
 
     boolean ulang = true;
     do {
       
-
     // fikril_Ha
     judul();
     // bayar per jarak
@@ -238,7 +233,7 @@ public static double jarak(int a, int b) {
     System.out.println("Harga: Rp. " + hargaPacking[pack]);
 	
     //bayar
-    System.out.println("\n---------- Pilihan Pembayaran ----------");
+    System.out.println("\n------- Pilihan Pembayaran -------");
     String in = "0";
     String kembalian = "Belum Dipilih";
     System.out.println("1. Tunai");
@@ -264,14 +259,14 @@ public static double jarak(int a, int b) {
             break;
             case "5" :
                 System.out.println("Pilih Jenis E-wallet: ");
-                System.out.println("1. Link Aja");
+                System.out.println("1. LinkAja");
                 System.out.println("2. Ovo");
                 System.out.println("3. Gopay");
                 System.out.print("Masukkan Pilihan: ");
                 String pil = sc.nextLine();
                 switch (pil){
                     case "1" :
-                        kembalian = "Link Aja";
+                        kembalian = "LinkAja";
                     break;
                     case "2" :
                         kembalian = "Ovo";
@@ -283,16 +278,14 @@ public static double jarak(int a, int b) {
         }
 		int total = hargaPerJarak + hargaPerBerat + hargaLayanan[layanan] + hargaPacking[pack];
 		System.out.println("Anda Memilih Pembayaran Dengan " + kembalian);
+		System.out.println("---------------------------------------");
 		System.out.println("Total Pembayaran: Rp. "+total);
         menampilkanOutput(resi(), namaCustom, jenis, namaBarang, berat, jml, total, kembalian, layanan, ket);
 
-        System.out.print("Apakah Anda Ingin Melakukan Pengiriman Lagi? (Iya/Tidak): ");
+        System.out.print("\nApakah Anda Ingin Melakukan Pengiriman Lagi? (Iya/Tidak): ");
         ulang = input.nextLine().equalsIgnoreCase("iya");
 	    } while (ulang);
-    System.out.println("\n\n\t\t\t             Terima Kasih !!!             ");
-    System.out.println("\t\t\tAnda Telah Menggunakan Jasa Ekspedisi Kami");
-	
-	
-	
+    System.out.println("\n\t\t\t                  Terima Kasih              ");
+    System.out.println("\t\t\tAnda Telah Menggunakan Jasa Ekspedisi Kami :)");
   }
 }
