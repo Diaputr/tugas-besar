@@ -47,7 +47,6 @@ public class Ekspedisi {
     // pengirim
     public static int inputPengirim() {
         System.out.println("\n------- Pengirim -------");
-        pb.nextLine();
         System.out.print("Nama Pengirim: ");
         namaCustom[0] = pb.nextLine();
         System.out.print("Nomor HP Pengirim: ");
@@ -169,7 +168,7 @@ public class Ekspedisi {
 
     public static void menampilkanOutput(int[] lacak, String[] pengirim, int jenis, String nama, double berat, int jml,
                                          int perhitungan, String pembayaran, int Layanan, String keterangan) {
-        System.out.println("\n============ Bukti Pengiriman ============");
+        System.out.println("\n\n============ Bukti Pengiriman ============");
         System.out.print("No Resi: ");
         for (int a = 0; a < lacak.length; a++) {
             System.out.print(lacak[a]);
@@ -197,13 +196,14 @@ public class Ekspedisi {
         System.out.println("4. Keluar");
         System.out.print("Pilih Menu: ");
         int pil = pb.nextInt();
+		pb.nextLine();
         if (pil==1){
             return;
         } else if (pil==2){
             System.out.println("\n------- Daftar Harga -------");
-            System.out.println("A) Harga Berat\n1. <5 kg = Rp. 5000\n2. 5 - 10 kg = Rp. 10000\n>3. 10 kg = Rp. 15000");
-            System.out.println("\nB) Harga Layanan\n1. Reguler = Rp. 7000\n2. Kilat = Rp. 10000\n3. Ekonomis = Rp. 4000\nSpecial Service = Rp. 15000");
-            System.out.println("\nC) Harga Packing\n1. Kardus = Rp. 3000\n2. Kayu = Rp. 15000");
+            System.out.println("A) Harga Berat\n1. <5 	kg	: Rp. 5000\n2. 5-10	kg	: Rp. 10000\n3. >10	kg	: Rp. 15000");
+            System.out.println("\nB) Harga Layanan\n1. Reguler		: Rp. 7000\n2. Kilat		: Rp. 10000\n3. Ekonomis		: Rp. 4000\n4. Special Service	: Rp. 15000");
+            System.out.println("\nC) Harga Packing\n1. Kardus	: Rp. 3000\n2. Kayu		: Rp. 15000");
             menu();
         } else if (pil==3){
             System.out.println("\n------- Cek Tarif Pengiriman -------");
@@ -246,7 +246,6 @@ public class Ekspedisi {
 
         // fikril_Ha
         judul();
-
 
         menu();
          while (ulang){
@@ -335,6 +334,7 @@ public class Ekspedisi {
             System.out.println("Anda Memilih Pembayaran Dengan " + kembalian);
             System.out.println("---------------------------------------");
             System.out.println("Total Pembayaran: Rp. "+total);
+			System.out.println("---------------------------------------");
             menampilkanOutput(resi(), namaCustom, jenis, namaBarang, berat, jml, total, kembalian, layanan, ket);
 
             System.out.print("\nApakah Anda Ingin Melakukan Pengiriman Lagi? (Iya/Tidak): ");
