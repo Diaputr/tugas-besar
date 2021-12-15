@@ -42,8 +42,7 @@ import java.util.spi.CalendarNameProvider;
       { 191, 219 }, { 112, 186 }, { 290, 241 }, /** 35. */
       { 259, 159 }, { 334, 190 }, { 384, 210 }, { 303, 128 } };
 	
-
- // pengirim
+  // pengirim
   public static int inputPengirim() {
     System.out.println("\n------- Pengirim -------");
 	pb.nextLine();
@@ -91,7 +90,6 @@ import java.util.spi.CalendarNameProvider;
   return hasil;
 }
 
-
   //barang
   public static String[] jenisBarang = { "Elektronik/Gadget", "Farmasi/Kosmetik", "Makanan/Minuman", "Pakaian",
       "Pecah Belah" };
@@ -120,7 +118,6 @@ import java.util.spi.CalendarNameProvider;
     }
     return bayar;
   }
-
 	 
   //layanan	
   public static String[] jenisLayanan = { "Reguler", "Kilat", "Ekonomis", "Special Service" };
@@ -200,13 +197,13 @@ import java.util.spi.CalendarNameProvider;
 	int pil = pb.nextInt();
 	if (pil==1){
 		return;
-	} else if (pil==2) {
+	} else if (pil==2){
 		System.out.println("\n------- Daftar Harga -------");
-		System.out.println("A) Harga Berat\n<5 kg = Rp. 5000\n5 - 10 kg = Rp. 10000\n>10 kg = Rp. 15000");
-		System.out.println("\nB) Harga Layanan\nReguler = Rp. 7000\nKilat = Rp. 10000\nEkonomis = Rp. 4000\nSpecial Service = Rp. 15000");
-		System.out.println("\nC) Harga Packing\nKardus = Rp. 3000\nKayu = Rp. 15000");
+		System.out.println("A) Harga Berat\n•<5 kg = Rp. 5000\n•5 - 10 kg = Rp. 10000\n•>10 kg = Rp. 15000");
+		System.out.println("\nB) Harga Layanan\n•Reguler = Rp. 7000\n•Kilat = Rp. 10000\n•Ekonomis = Rp. 4000\nSpecial Service = Rp. 15000");
+		System.out.println("\nC) Harga Packing\n•Kardus = Rp. 3000\n•Kayu = Rp. 15000");
 		menu();
-	} else if (pil==3) {
+	} else if (pil==3){
 		System.out.println("\n------- Cek Tarif Pengiriman -------");
 		tampilinBagus();
 		System.out.print("\nDaerah Asal: ");
@@ -238,10 +235,10 @@ import java.util.spi.CalendarNameProvider;
 		System.out.println("-----------------------------------");
 		
 		menu();
-	      } else if (pil==4){ 
-		break;
+	      } else if(pil==4){
+			break;
+		}		
 	}
-  }
   
   public static void main(String[] args) {
 	
