@@ -12,7 +12,7 @@ public class Ekspedisi {
         System.out.println("\t\t\t         SELAMAT DATANG           ");
         System.out.println("\t\t\t--------------------------------");
         System.out.println("\t\t\t   PAKET JAWA TIMUR SENTOSA     ");
-        System.out.println("\t\t\tSIAP MELAYANI SAMPAI GULUNG TIKAR ");
+        System.out.println("\t\t\tSIAP MELAYANI SAMPAI GULUNG TIKAR");
     }
 
     public static Scanner pb = new Scanner(System.in);
@@ -92,8 +92,7 @@ public class Ekspedisi {
     }
 
     //barang
-    public static String[] jenisBarang = { "Elektronik/Gadget", "Farmasi/Kosmetik", "Makanan/Minuman", "Pakaian",
-            "Pecah Belah" };
+    public static String[] jenisBarang = { "Elektronik/Gadget", "Farmasi/Kosmetik", "Makanan/Minuman", "Pakaian", "Pecah Belah" };
 
     public static void tampilBarang() {
         System.out.println("\n------- Informasi Barang --------");
@@ -121,8 +120,8 @@ public class Ekspedisi {
     }
 
     //layanan
-    public static String[] jenisLayanan = { "Reguler", "Kilat", "Ekonomis", "Special Service" };
-    public static int[] hargaLayanan = { 7000, 10000, 4000, 15000 };
+    public static String[] jenisLayanan = {  "Ekonomis", "Reguler", "Kilat", "Special Service" };
+    public static int[] hargaLayanan = { 4000, 7000, 10000, 15000 };
 
     public static String[] jenisPacking = { "Tanpa Tambahan", "Tambah Packing Kardus", "Tambah Packing Kayu" };
     public static int[] hargaPacking = { 0, 3000, 15000 };
@@ -202,7 +201,7 @@ public class Ekspedisi {
         } else if (pil==2){
             System.out.println("\n------- Daftar Harga -------");
             System.out.println("A) Harga Berat\n1. <5 	kg	: Rp. 5000\n2. 5-10	kg	: Rp. 10000\n3. >10	kg	: Rp. 15000");
-            System.out.println("\nB) Harga Layanan\n1. Reguler		: Rp. 7000\n2. Kilat		: Rp. 10000\n3. Ekonomis		: Rp. 4000\n4. Special Service	: Rp. 15000");
+            System.out.println("\nB) Harga Layanan\n1. Ekonomis	: Rp. 4000\n2. Reguler	: Rp. 7000\n3. Kilat	: Rp. 10000\n4. Special	: Rp. 15000");
             System.out.println("\nC) Harga Packing\n1. Kardus	: Rp. 3000\n2. Kayu		: Rp. 15000");
             menu();
         } else if (pil==3){
@@ -252,7 +251,8 @@ public class Ekspedisi {
             // bayar per jarak
             int hargaPerJarak = (int) jarak(inputPengirim(), inputPenerima());
             System.out.println("Harga Berdasarkan Jarak: Rp. " + hargaPerJarak);
-            // puput
+			
+            // put
             tampilBarang();
             Scanner input = new Scanner(System.in);
             System.out.print("Pilih Jenis Barang: ");
@@ -330,15 +330,25 @@ public class Ekspedisi {
                             break;
                     }
             }
-            int total = hargaPerJarak + hargaPerBerat + hargaLayanan[layanan] + hargaPacking[pack];
+			
             System.out.println("Anda Memilih Pembayaran Dengan " + kembalian);
+	    int total = hargaPerJarak + hargaPerBerat + hargaLayanan[layanan] + hargaPacking[pack];
             System.out.println("---------------------------------------");
             System.out.println("Total Pembayaran: Rp. "+total);
-			System.out.println("---------------------------------------");
+	    System.out.println("---------------------------------------");
             menampilkanOutput(resi(), namaCustom, jenis, namaBarang, berat, jml, total, kembalian, layanan, ket);
 
             System.out.print("\nApakah Anda Ingin Melakukan Pengiriman Lagi? (Iya/Tidak): ");
-            ulang = input.nextLine().equalsIgnoreCase("iya");
+	    String ulangi = input.nextLine();
+	    	if(ulangi.equalsIgnoreCase ("y")){
+	    	ulang = true; menu();
+		} else if(ulangi.equalsIgnoreCase ("ya")){
+		ulang = true; menu();
+		} else if(ulangi.equalsIgnoreCase ("iya")){
+		ulang = true; menu();
+		} else {
+		ulang = false;
+	    }
         }
         System.out.println("\n\t\t\t                 Terima Kasih              ");
         System.out.println("\t\t\tAnda Telah Menggunakan Jasa Ekspedisi Kami :)");
