@@ -199,7 +199,7 @@ import java.util.spi.CalendarNameProvider;
 		return;
 	} else if (pil==2){
 		System.out.println("\n------- Daftar Harga -------");
-		System.out.println("A) Harga Berat\n1. <5 kg = Rp. 5000\n2. 5 - 10 kg = Rp. 10000\n>3. 10 kg = Rp. 15000");
+		System.out.println("A) Harga Berat\n1. <5 kg = Rp. 5000\n2. 5 - 10 kg = Rp. 10000\n3. >10 kg = Rp. 15000");
 		System.out.println("\nB) Harga Layanan\n1. Reguler = Rp. 7000\n2. Kilat = Rp. 10000\n3. Ekonomis = Rp. 4000\nSpecial Service = Rp. 15000");
 		System.out.println("\nC) Harga Packing\n1. Kardus = Rp. 3000\n2. Kayu = Rp. 15000");
 		menu();
