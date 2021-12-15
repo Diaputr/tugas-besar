@@ -13,7 +13,7 @@ import java.util.spi.CalendarNameProvider;
     System.out.println("\t\t\t   ~PAKET JAWA TIMUR SENTOSA~     ");
     System.out.println("\t\t\tSIAP MELAYANI SAMPAI GULUNG TIKAR ");
   }
-
+  
   public static Scanner pb = new Scanner(System.in);
   public static String[] namaCustom = new String[2];
   public static String[] noHP = new String[2];
@@ -46,6 +46,7 @@ import java.util.spi.CalendarNameProvider;
  // pengirim
   public static int inputPengirim() {
     System.out.println("\n------- Pengirim -------");
+	pb.nextLine();
     System.out.print("Nama Pengirim: ");
     namaCustom[0] = pb.nextLine();
     System.out.print("Nomor HP Pengirim: ");
@@ -104,15 +105,16 @@ import java.util.spi.CalendarNameProvider;
 	
   public static double menghitungHargaBarangPerBerat(double berat, int jml) {
     int[] harga = { 5000, 10000, 15000 };
-    double bayar = 0;
+    double bayar = berat * jml;
     if (berat >= 0 && berat < 5) {
-      bayar = jml * berat * harga[0];
+      bayar *= harga[0];
 
     } else if (berat >= 5 && berat < 10) {
-      bayar = jml * berat * harga[1];
+      bayar *= harga[1];
 
     } else if (berat >= 10) {
-      bayar = jml * berat * harga[2];
+      bayar *= harga[2];
+	  
     } else {
       System.out.println("Error");
     }
@@ -187,14 +189,69 @@ import java.util.spi.CalendarNameProvider;
     System.out.println("Jenis Pembayaran  : " + pembayaran);
     System.out.println("Keterangan        : " + keterangan);
   }
-	
+  
+	 public static void menu() {
+	System.out.println("\n------- MENU -------");
+    System.out.println("1. Mengirim Paket");
+	System.out.println("2. Daftar Harga");
+    System.out.println("3. Cek Tarif Pengiriman");
+    System.out.println("4. Keluar");
+    System.out.print("Pilih Menu: ");
+	int pil = pb.nextInt();
+	if (pil==1){
+		return;
+	} else if (pil==2) {
+		System.out.println("\n------- Daftar Harga -------");
+		System.out.println("A) Harga Berat\n<5 kg = Rp. 5000\n5 - 10 kg = Rp. 10000\n>10 kg = Rp. 15000");
+		System.out.println("\nB) Harga Layanan\nReguler = Rp. 7000\nKilat = Rp. 10000\nEkonomis = Rp. 4000\nSpecial Service = Rp. 15000");
+		System.out.println("\nC) Harga Packing\nKardus = Rp. 3000\nKayu = Rp. 15000");
+		menu();
+	} else if (pil==3) {
+		System.out.println("\n------- Cek Tarif Pengiriman -------");
+		tampilinBagus();
+		System.out.print("\nDaerah Asal: ");
+		int asal = pb.nextInt() - 1;
+		System.out.print("Daerah Tujuan: ");
+		int tujuan = pb.nextInt() - 1;
+		
+		int harga = (int) jarak(asal,tujuan);
+		
+		System.out.println("\n------- Informasi Barang --------");
+		System.out.print("Berat Barang (kg): ");
+		double berat = pb.nextDouble();
+		System.out.print("Jumlah Barang: ");
+		int jml = pb.nextInt();
+		
+		int jumlah = (int) menghitungHargaBarangPerBerat(berat,jml);
+		
+		tampilLayanan();
+		System.out.print("Pilih Layanan: ");
+		int layanan = pb.nextInt() - 1;
+		tampilPacking();
+		System.out.print("Pilih Packing: ");
+		int pack = pb.nextInt() - 1;
+		
+		int total = (int) harga + jumlah + hargaLayanan[layanan] + hargaPacking[pack];
+		
+		System.out.println("\n-----------------------------------");
+		System.out.println("Total Pengecekan Tarif: Rp. "+total);
+		System.out.println("-----------------------------------");
+		
+		menu();
+	} else if (pil==4){ 
+		break;
+	}
+  }
+  
   public static void main(String[] args) {
-
+	
+	// fikril_Ha
+	judul();
+	
     boolean ulang = true;
     do {
       
-    // fikril_Ha
-    judul();
+    menu();
     // bayar per jarak
     int hargaPerJarak = (int) jarak(inputPengirim(), inputPenerima());
 	System.out.println("Harga Berdasarkan Jarak: Rp. " + hargaPerJarak);
