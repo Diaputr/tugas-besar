@@ -190,10 +190,10 @@ import java.util.spi.CalendarNameProvider;
     System.out.println("Keterangan        : " + keterangan);
   }
   
-	 public static void menu() {
-	System.out.println("\n------- MENU -------");
+    public static void menu() {
+    System.out.println("\n------- MENU -------");
     System.out.println("1. Mengirim Paket");
-	System.out.println("2. Daftar Harga");
+    System.out.println("2. Daftar Harga");
     System.out.println("3. Cek Tarif Pengiriman");
     System.out.println("4. Keluar");
     System.out.print("Pilih Menu: ");
@@ -238,7 +238,7 @@ import java.util.spi.CalendarNameProvider;
 		System.out.println("-----------------------------------");
 		
 		menu();
-	} else if (pil==4){ 
+	      } else if (pil==4){ 
 		break;
 	}
   }
