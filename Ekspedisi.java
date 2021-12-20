@@ -140,15 +140,6 @@ public class Ekspedisi {
         }
     }
 
-    public static String tanggalPengiriman;
-    public static String nomorResi;
-    public Ekspedisi() {
-        DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
-        Calendar cal = Calendar.getInstance();
-        tanggalPengiriman = dateFormat.format(cal.getTime());
-        nomorResi = tampilkanTanggal();
-    }
-
     public static String tampilkanTanggal() {
         DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
         Calendar cal = Calendar.getInstance();
