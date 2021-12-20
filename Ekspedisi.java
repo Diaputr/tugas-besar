@@ -146,6 +146,54 @@ public class Ekspedisi {
 
         return dateFormat.format(cal.getTime());
     }
+	
+	  //bayar
+		public static String jenisPembayaran() {
+            System.out.println("\n------- Pilihan Pembayaran -------");
+            String in = "0";
+            String kembalian = "Belum Dipilih";
+            System.out.println("1. Tunai");
+            System.out.println("2. Debit");
+            System.out.println("3. Kredit");
+            System.out.println("4. COD");
+            System.out.println("5. E-Wallet");
+            System.out.print("Masukkan Jenis Pembayaran: ");
+            in = pb.nextLine();
+            switch (in){
+                case "1" :
+                    kembalian = "Tunai";
+                    break;
+                case "2" :
+                    kembalian = "Debit";
+                    break;
+                case "3" :
+                    kembalian = "Kredit";
+                    break;
+                case "4" :
+                    kembalian = "Cash On Delivery";
+                    break;
+                case "5" :
+                    System.out.println("Pilih Jenis E-wallet: ");
+                    System.out.println("1. LinkAja");
+                    System.out.println("2. Ovo");
+                    System.out.println("3. Gopay");
+                    System.out.print("Masukkan Pilihan: ");
+                    String pil = pb.nextLine();
+                    switch (pil){
+                        case "1" :
+                            kembalian = "LinkAja";
+                            break;
+                        case "2" :
+                            kembalian = "Ovo";
+                            break;
+                        case "3" :
+                            kembalian = "Gopay";
+                            break;
+                    }
+            }
+		return kembalian;
+	}
+	
     // resi
     public static int[] resi() {
         Random acak = new Random();
@@ -188,7 +236,7 @@ public class Ekspedisi {
         int pil = pb.nextInt();
 		pb.nextLine();
         if (pil==1){
-            return;
+            System.out.println("\n======= Pengiriman Paket =======");
         } else if (pil==2){
             System.out.println("\n------- Daftar Harga -------");
             System.out.println("A) Harga Berat\n1. <5 	kg	: Rp. 5000\n2. 5-10	kg	: Rp. 10000\n3. >10	kg	: Rp. 15000");
@@ -277,57 +325,13 @@ public class Ekspedisi {
             int pack = sc.nextInt() - 1;
             System.out.println("Harga: Rp. " + hargaPacking[pack]);
 
-            //bayar
-            System.out.println("\n------- Pilihan Pembayaran -------");
-            String in = "0";
-            String kembalian = "Belum Dipilih";
-            System.out.println("1. Tunai");
-            System.out.println("2. Debit");
-            System.out.println("3. Kredit");
-            System.out.println("4. COD");
-            System.out.println("5. E-Wallet");
-            sc.nextLine();
-            System.out.print("Masukkan Jenis Pembayaran: ");
-            in = sc.nextLine();
-            switch (in){
-                case "1" :
-                    kembalian = "Tunai";
-                    break;
-                case "2" :
-                    kembalian = "Debit";
-                    break;
-                case "3" :
-                    kembalian = "Kredit";
-                    break;
-                case "4" :
-                    kembalian = "Cash On Delivery";
-                    break;
-                case "5" :
-                    System.out.println("Pilih Jenis E-wallet: ");
-                    System.out.println("1. LinkAja");
-                    System.out.println("2. Ovo");
-                    System.out.println("3. Gopay");
-                    System.out.print("Masukkan Pilihan: ");
-                    String pil = sc.nextLine();
-                    switch (pil){
-                        case "1" :
-                            kembalian = "LinkAja";
-                            break;
-                        case "2" :
-                            kembalian = "Ovo";
-                            break;
-                        case "3" :
-                            kembalian = "Gopay";
-                            break;
-                    }
-            }
-			
-            System.out.println("Anda Memilih Pembayaran Dengan " + kembalian);
-	    int total = hargaPerJarak + hargaPerBerat + hargaLayanan[layanan] + hargaPacking[pack];
+			      String kembali = jenisPembayaran();
+            System.out.println("Anda Memilih Pembayaran Dengan " + kembali);
+	          int total = hargaPerJarak + hargaPerBerat + hargaLayanan[layanan] + hargaPacking[pack];
             System.out.println("---------------------------------------");
             System.out.println("Total Pembayaran: Rp. "+total);
-	    System.out.println("---------------------------------------");
-            menampilkanOutput(resi(), namaCustom, jenis, namaBarang, berat, jml, total, kembalian, layanan, ket);
+	          System.out.println("---------------------------------------");
+            menampilkanOutput(resi(), namaCustom, jenis, namaBarang, berat, jml, total, kembali, layanan, ket);
 
             System.out.print("\nApakah Anda Ingin Melakukan Pengiriman Lagi? (Iya/Tidak): ");
 	    String ulangi = input.nextLine();
