@@ -276,7 +276,7 @@ public class Ekspedisi {
     public static void main(String[] args) {
 
         // fikril_Ha
-		System.out.println("\t\t\t         SELAMAT DATANG           ");
+        System.out.println("\t\t\t         SELAMAT DATANG           ");
         System.out.println("\t\t\t--------------------------------");
         System.out.println("\t\t\t   PAKET JAWA TIMUR SENTOSA     ");
         System.out.println("\t\t\tSIAP MELAYANI SAMPAI GULUNG TIKAR");
