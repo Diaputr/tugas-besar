@@ -8,13 +8,6 @@ import java.util.spi.CalendarNameProvider;
 
 public class Ekspedisi {
 
-    public static void judul() {
-        System.out.println("\t\t\t         SELAMAT DATANG           ");
-        System.out.println("\t\t\t--------------------------------");
-        System.out.println("\t\t\t   PAKET JAWA TIMUR SENTOSA     ");
-        System.out.println("\t\t\tSIAP MELAYANI SAMPAI GULUNG TIKAR");
-    }
-
     public static Scanner pb = new Scanner(System.in);
     public static String[] namaCustom = new String[2];
     public static String[] noHP = new String[2];
@@ -283,7 +276,10 @@ public class Ekspedisi {
     public static void main(String[] args) {
 
         // fikril_Ha
-        judul();
+		System.out.println("\t\t\t         SELAMAT DATANG           ");
+        System.out.println("\t\t\t--------------------------------");
+        System.out.println("\t\t\t   PAKET JAWA TIMUR SENTOSA     ");
+        System.out.println("\t\t\tSIAP MELAYANI SAMPAI GULUNG TIKAR");
 
         menu();
          while (ulang){
