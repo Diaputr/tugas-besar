@@ -139,16 +139,9 @@ public class Ekspedisi {
             System.out.println((i + 1) + ". " + jenisPacking[i]);
         }
     }
-
-    public static String tampilkanTanggal() {
-        DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
-        Calendar cal = Calendar.getInstance();
-
-        return dateFormat.format(cal.getTime());
-    }
 	
-	  //bayar
-		public static String jenisPembayaran() {
+    //bayar
+    public static String jenisPembayaran() {
             System.out.println("\n------- Pilihan Pembayaran -------");
             String in = "0";
             String kembalian = "Belum Dipilih";
@@ -193,6 +186,13 @@ public class Ekspedisi {
             }
 		return kembalian;
 	}
+	
+    public static String tampilkanTanggal() {
+        DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+        Calendar cal = Calendar.getInstance();
+
+        return dateFormat.format(cal.getTime());
+    }
 	
     // resi
     public static int[] resi() {
@@ -275,7 +275,7 @@ public class Ekspedisi {
             System.out.println("-----------------------------------");
 
             menu();
-        }else {
+        } else {
             ulang = false;
         }
     }
@@ -325,21 +325,21 @@ public class Ekspedisi {
             int pack = sc.nextInt() - 1;
             System.out.println("Harga: Rp. " + hargaPacking[pack]);
 
-			      String kembali = jenisPembayaran();
+	    String kembali = jenisPembayaran();
             System.out.println("Anda Memilih Pembayaran Dengan " + kembali);
-	          int total = hargaPerJarak + hargaPerBerat + hargaLayanan[layanan] + hargaPacking[pack];
+	    int total = hargaPerJarak + hargaPerBerat + hargaLayanan[layanan] + hargaPacking[pack];
             System.out.println("---------------------------------------");
             System.out.println("Total Pembayaran: Rp. "+total);
-	          System.out.println("---------------------------------------");
+	    System.out.println("---------------------------------------");
             menampilkanOutput(resi(), namaCustom, jenis, namaBarang, berat, jml, total, kembali, layanan, ket);
 
             System.out.print("\nApakah Anda Ingin Melakukan Pengiriman Lagi? (Iya/Tidak): ");
 	    String ulangi = input.nextLine();
 	    	if(ulangi.equalsIgnoreCase ("y")){
 	    	ulang = true; menu();
-		} else if(ulangi.equalsIgnoreCase ("ya")){
+		} else if (ulangi.equalsIgnoreCase ("ya")){
 		ulang = true; menu();
-		} else if(ulangi.equalsIgnoreCase ("iya")){
+		} else if (ulangi.equalsIgnoreCase ("iya")){
 		ulang = true; menu();
 		} else {
 		ulang = false;
