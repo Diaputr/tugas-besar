@@ -228,7 +228,7 @@ public class Ekspedisi {
 
             menu();
         }else {
-            break outer;
+            ulang = false;
         }
     }
 
@@ -237,9 +237,8 @@ public class Ekspedisi {
         // fikril_Ha
         judul();
 
-	    outer:
+        menu();
          while (ulang){
-		menu();
             // bayar per jarak
             int hargaPerJarak = (int) jarak(inputPengirim(), inputPenerima());
             System.out.println("Harga Berdasarkan Jarak: Rp. " + hargaPerJarak);
