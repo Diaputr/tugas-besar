@@ -21,7 +21,7 @@ public class Ekspedisi {
     public static String[] alamat = new String[2];
     static boolean ulang = true;
 
-    public static void tampilinBagus() {
+    public static void tampilkanKota() {
         System.out.println("Pilihan Kota/Kabupaten");
         System.out.println("1. Kab. Bangkalan   11. Kab. Lumajang   21. Kab. Ponorogo     31. Kota Blitar");
         System.out.println("2. Kab. Banyuwangi  12. Kab. Madiun     22. Kab. Probolinggo  32. Kota Kediri");
@@ -51,7 +51,7 @@ public class Ekspedisi {
         namaCustom[0] = pb.nextLine();
         System.out.print("Nomor HP Pengirim: ");
         noHP[0] = pb.nextLine();
-        tampilinBagus();
+        tampilkanKota();
         System.out.print("Masukkan Asal: ");
         int asal = pb.nextInt() - 1;
         pb.nextLine();
@@ -66,7 +66,7 @@ public class Ekspedisi {
         namaCustom[1] = pb.nextLine();
         System.out.print("Nomor HP Penerima: ");
         noHP[1] = pb.nextLine();
-        tampilinBagus();
+        tampilkanKota();
         System.out.print("Masukkan Tujuan: ");
         int tujuan = pb.nextInt() - 1;
         pb.nextLine();
@@ -140,15 +140,6 @@ public class Ekspedisi {
         }
     }
 
-    public static String tanggalPengiriman;
-    public static String nomorResi;
-    public Ekspedisi() {
-        DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
-        Calendar cal = Calendar.getInstance();
-        tanggalPengiriman = dateFormat.format(cal.getTime());
-        nomorResi = tampilkanTanggal();
-    }
-
     public static String tampilkanTanggal() {
         DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
         Calendar cal = Calendar.getInstance();
@@ -206,7 +197,7 @@ public class Ekspedisi {
             menu();
         } else if (pil==3){
             System.out.println("\n------- Cek Tarif Pengiriman -------");
-            tampilinBagus();
+            tampilkanKota();
             System.out.print("\nDaerah Asal: ");
             int asal = pb.nextInt() - 1;
             System.out.print("Daerah Tujuan: ");
