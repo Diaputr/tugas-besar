@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-02T11:32:40.312Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 OPR/84.0.4316.21" etag="XDStUDflnY3OZaPB-WMw" version="16.6.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-02T11:32:59.897Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 OPR/84.0.4316.21" etag="DnlJMQ3xRFGYeXUcXlyZ" version="16.6.4" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="1510" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -22,7 +22,7 @@
             <mxPoint x="558" y="393" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IAhGSMrXwPg0kfitmQvQ-55" value="Catat" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IAhGSMrXwPg0kfitmQvQ-55" value="Catat" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFE6CC;" vertex="1" parent="1">
           <mxGeometry x="502.5" y="370" width="100" height="88" as="geometry" />
         </mxCell>
         <mxCell id="IAhGSMrXwPg0kfitmQvQ-49" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;" edge="1" parent="1" source="IAhGSMrXwPg0kfitmQvQ-48" target="IAhGSMrXwPg0kfitmQvQ-26">
@@ -76,7 +76,7 @@
             <mxPoint x="568" y="403" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IAhGSMrXwPg0kfitmQvQ-48" value="Proses" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IAhGSMrXwPg0kfitmQvQ-48" value="Proses" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFE6CC;" vertex="1" parent="1">
           <mxGeometry x="350" y="246" width="100" height="88" as="geometry" />
         </mxCell>
         <mxCell id="IAhGSMrXwPg0kfitmQvQ-70" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="IAhGSMrXwPg0kfitmQvQ-35" target="IAhGSMrXwPg0kfitmQvQ-48">
@@ -127,7 +127,7 @@
             <mxPoint x="434" y="360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IAhGSMrXwPg0kfitmQvQ-61" value="Sewa" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IAhGSMrXwPg0kfitmQvQ-61" value="Sewa" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFE6CC;" vertex="1" parent="1">
           <mxGeometry x="660" y="246" width="100" height="88" as="geometry" />
         </mxCell>
         <mxCell id="IAhGSMrXwPg0kfitmQvQ-71" value="M" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
