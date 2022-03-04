@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-04T01:25:32.155Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 OPR/84.0.4316.21" etag="k26fAhMGh4jkXGyykakI" version="16.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-04T01:25:45.828Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 OPR/84.0.4316.21" etag="tjCcRNiYe98J4uNMzEVo" version="16.6.5" type="github">
   <diagram id="NXMb4UbkqZvhrgSBocj7" name="Page-1">
     <mxGraphModel dx="1068" dy="452" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -71,13 +71,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="i72QKfD3W4Oeev8yxdJz-17" value="Long periods?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;arcSize=0;" vertex="1" parent="1">
-          <mxGeometry x="194.06" y="720" width="111.88" height="100" as="geometry" />
+          <mxGeometry x="194.06" y="730" width="111.88" height="100" as="geometry" />
         </mxCell>
         <mxCell id="i72QKfD3W4Oeev8yxdJz-19" value="N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="220" y="675" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="i72QKfD3W4Oeev8yxdJz-21" value="Book a accommodation" style="whiteSpace=wrap;html=1;rounded=1;arcSize=0;" vertex="1" parent="1">
-          <mxGeometry x="370" y="745" width="158.12" height="50" as="geometry" />
+          <mxGeometry x="370" y="755" width="158.12" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
